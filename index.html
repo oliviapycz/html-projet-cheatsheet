@@ -39,8 +39,121 @@
     &lt;head&gt;&lt;/head&gt;
     &lt;body&gt;&lt;/body&gt;
 &lt;/html&gt;
+
+&lt;select&gt;&lt;/select&gt;
+   &lt;La balise select permet de créer une liste déroulante ou à choix multiples&gt;
+    <br>
+&lt;optgroup&gt;&lt;/optgroup&gt;
+    &lt;La balise optgroup est utilisée pour grouper au sein de la balise "select" un
+    ensemble d'éléments options de même type &gt;
+   <br>
+&lt;options&gt;&lt;/options&gt;
+    &lt;La balise "option" s'utilise spécifiquement à l'intérieur d'une liste :
+    "select". Elle définit un élément de cette liste &gt;
+
+exemple :
+<div class="example-code">
+    &lt;select class="" name="select"&gt;
+        &lt;optgroup label="optgroup"&gt;
+            &lt;option&gt;option1&lt;/option&gt;
+            &lt;option&gt;option2&lt;/option&gt;
+        &lt;/optgroup&gt;
+        &lt;optgroup label="optgroup"&gt;
+            &lt;option&gt;option3&lt;/option&gt;
+        &lt;/optgroup&gt;
+    &lt;/select&gt;
+</div>
+<div class="example-result">
+    <select class="" name="select">
+        <optgroup label="optgroup">
+            <option>option1</option>
+            <option>option2</option>
+        </optgroup>
+        <optgroup label="optgroup">
+            <option>option3</option>
+        </optgroup>
+    </select>
+</div>
+
+
+&lt;fieldset&gt;&lt;/fieldset&gt;
+  &lt;la balise "fieldset" est employée pour structurer plus facilement les formulaires.
+  Elle permet en effet de regrouper et d'encadrer de façon visuelle un ensemble de champs.
+  Il est de plus possible d'attribuer un titre à ce groupement en employant la balise
+  "legend"&gt;
+
+&lt;labels&gt;&lt;/label&gt;
+  &lt;La balise "label" permet de rattacher une information textuelle à un contrôle
+  par le biais d'une étiquette. Ce tag est généralement utilisé dans les formulaires
+  pour mettre en relation une zone de saisie et son descriptif"&gt;
+
+&lt;legend&gt;&lt;/legend&gt;
+  &lt;La balise "legend" est utilisée au sein du tag "fieldset".
+  Celui-ci permet de créer un cadre autour des éléments qu'il contient,
+  et la balise "legend" permet de donner un titre à ce cadre&gt;
+
+&lt;form&gt;&lt;/form&gt;
+  Les balises FORM et /FORM entourent un formulaire. La balise FORM peut contenir des attributs :NAME=nom qui permet de différencier plusieurs formulaires sur une même page.
+  Entre les balises FORM et /FORM on met du texte et des objets destinés à recueillir les actions des utilisateurs : ligne de saisie, boutons, listes de sélection, ...
+
+        Exemples :
+        &lt;form&gt;
+            form elements
+        &lt;form&gt;
+
+&lt;input&gt;&lt;/input&gt;
+   Les balises INPUT et /INPUT permettent d'inclure dans un formulaire des objets destinés à réagir aux actions de l'utilisateur. Les attributs de la balise INPUT permettent de préciser le nom de l'objet et le type d'objet désiré.
+
+                Exemples :
+
+                &lt;form&gt;
+
+                First name:<br>
+
+                &lt;input type="text" name="firstname"&gt;<br>
+
+                Last name:<br>
+
+                &lt;input type="text" name="lastname"&gt;
+
+                &lt;/form&gt;
+
+                <form>
+
+                    First name:<br>
+
+                    <input type="text" name="firstname"><br>
+
+                    Last name:<br>
+
+                    <input type="text" name="lastname">
+
+                </form>
+
+&lt;textarea&gt;&lt;/textarea&gt;
+Les balises TEXTAREA et /TEXTAREA permettent de définir une zone de saisie à plusieurs lignes.
+
+                Exemples :
+
+                &lt;textarea name="comment" form="usrform"&gt;Enter text here...&lt;/textarea&gt;
+
+                <textarea name="comment" form="usrform">Enter text here...</textarea>
+
+&lt;button&gt;&lt;/button&gt;
+
+La balise permet de créer un contrôle de type bouton. C'est l'un des différents éléments utilisables au sein d'un formulaire &lt;form&gt; (au même titre que select, textarea et input).
+Il est possible de placer du code html à l'intérieur de l'élément button.
+
+                Exemples :
+
+                &lt;button type="button"&gt;Click Me!&lt;/button&gt;
+
+                <button type="button">Click Me!</button>
+
+
                 </pre>
             </section>
+
 
         </main>
 
@@ -78,9 +191,10 @@
                 <li></li>
             </ul>
 
+
+
         </footer>
 
     </body>
 
 </html>
-
