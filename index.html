@@ -167,7 +167,43 @@ vers d'autres pages ou des fragments de cette page. Autrement dit, c'est une sec
               &lt;/ul&gt;
             &lt;/nav&gt;
               </pre>
-        
+                  <section class="site-content">
+              <!-- ----------------------------AUDIO ET VIDEO-------------------------- -->
+              <header>
+                  <h1>AUDIO ET VIDEO</h1> <!-- Permet de renseigner la thématique -->
+              </header>
+              <dl>  <!-- Liste de définitions des balises de la thématique concernée -->
+                <dt>audio</dt> <!-- nom de la balise -->
+                <dd>La balise  &lt;audio&gt;est utilisé afin d'intégrer un contenu sonore dans un document.</dd> <!-- définition de la balise -->
+              </dl> <!-- fin de la liste -->
+              <dl>  <!-- Liste de définitions des balises de la thématique concernée -->
+                <dt>source</dt> <!-- nom de la balise -->
+                <dd>La balise  &lt;source&gt;définit différentes ressources média pour un élément picture, audio ou vidéo.</dd> <!-- définition de la balise -->
+              </dl> <!-- fin de la liste -->
+              <dl>  <!-- Liste de définitions des balises de la thématique concernée -->
+                <dt>video</dt> <!-- nom de la balise -->
+                <dd>La balise  &lt;video&gt; intègre un contenu vidéo dans un document.</dd> <!-- définition de la balise -->
+              </dl> <!-- fin de la liste -->
+              <dl>  <!-- Liste de définitions des balises de la thématique concernée -->
+                <dt>track</dt> <!-- nom de la balise -->
+                <dd>La balise  &lt;track&gt;est utilisé comme élément fils d'un élément audio ou video
+et permet de fournir une piste texte pour le média (par exemple afin de gérer automatiquement les sous-titres).</dd> <!-- définition de la balise -->
+              </dl> <!-- fin de la liste -->
+              <pre>
+          &lt;audio controls&gt;
+            &lt;source src="horse.ogg" type="audio/ogg"&gt;
+            &lt;source src="horse.mp3" type="audio/mpeg"&gt;
+            Your browser does not support the audio element.
+          &lt;/audio&gt;
+          <br>
+          &lt;video width="320" height="240" controls&gt;
+            &lt;source src="movie.mp4" type="video/mp4"&gt;
+            &lt;source src="movie.ogg" type="video/ogg"&gt;
+            &lt;track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English"&gt;
+            Your browser does not support the video tag.
+          &lt;/video&gt;
+              </pre>
+            </section>
         </main>
 
         <footer class="site-footer flex-row flex-justify-center flex-align-baseline overflow-hidden">
