@@ -1,16 +1,10 @@
 <!doctype html>
 <html>
-
     <head>
-
         <meta charset="utf-8">
-
         <link rel="stylesheet" type="text/css" media="all" href="styles/main.css">
-
     </head>
-
     <body class="flex-column">
-
         <header class="site-header flex-row flex-justify-space-between flex-align-center">
             <h1>Aide-mémoire HTML</h1>
             <nav>
@@ -19,13 +13,16 @@
                 </ul>
             </nav>
         </header>
-
         <main class="site-main flex-1 overflow-auto">
-
             <section class="site-content">
-                <header>
-                    <h1>HTML : qu'est-ce que c'est ?</h1>
-                </header>
+            <header>
+                &lt;html&gt;
+              <h1>HTML : qu'est-ce que c'est ?</h1>
+    &lt;header&gt;
+    <p>Pour l'entête d'une section et/ou d'une page, cette balise est utile pour une introduction et/ou des éléments de navigation. Cette balise peut-être utilisée dans la balise &lt;section&gt; et dans la balise &lt;article&gt;. </p>
+&lt;/header&gt;
+              </pre>
+            </header>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.</p>
             </section>
             <section class="site-content">
@@ -35,33 +32,31 @@
                 <p>Lorem ipsum.</p>
                 <pre>
 &lt;!doctype html&gt;
-&lt;html&gt;
     &lt;head&gt;&lt;/head&gt;
     &lt;body&gt;&lt;/body&gt;
 &lt;/html&gt;
                 </pre>
             </section>
-
             <section class="site-content">
                 <!-- ---------------------------- Début du de l'annuaire -------------------------- -->
+                &lt;aside&gt;
+<p>Balise de structure supposant avoir un titre de type &lt;h1&gt;. Cette balise permet de regrouper des informations non essentielles relatives au site Web. Lorsque la balise &lt;aside&gt; se trouve dans un article, son contenu se réfère à l'article lui même et non au site Web (par exemple des notes de pages, un glossaire ou tout élément relatifs à l'article).
+Confusion : La sidebar d'une page n'a pas pour obligation d'être dans une balise &lt;aside&gt;. </p>
+                &lt;/aside&gt;
                 <header>
                     <h1>FORMULAIRES</h1> <!-- Permet de renseigner la thématique -->
                 </header>
                 <dl>  <!-- Liste de définitions des balises de la thématique concernée -->
                   <dt>Select</dt> <!-- nom de la balise -->
-                  <dd>La balise  &lt;select&gt; permet de créer une liste déroulante ou un choix multiples.</dd> <!-- définition de la balise -->   
+                  <dd>La balise  &lt;select&gt; permet de créer une liste déroulante ou un choix multiples.</dd> <!-- définition de la balise -->
                 </dl> <!-- fin de la liste -->
                 <pre>
    <!-- &lt;select&gt;Mettre un exemple&lt;/select&gt;
     &lt;bar&gt;en utilisant les balises&lt;/bar&gt; -->
-                </pre> 
-
+                </pre>
             </section>
-
         </main>
-
         <footer class="site-footer flex-row flex-justify-center flex-align-baseline overflow-hidden">
-
             <p>Réalisé par :</p>
             <ul class="authors">
              <li>Sambou</li>
@@ -93,10 +88,6 @@
                 <li>Ahmad</li>
                 <li>Tahar</li>
             </ul>
-
         </footer>
-
     </body>
-
 </html>
-
