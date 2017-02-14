@@ -45,11 +45,31 @@
             <section class="site-content">
                 <!-- ---------------------------- Début du de l'annuaire -------------------------- -->
                 <header>
-                    <h1>FORMULAIRES</h1> <!-- Permet de renseigner la thématique -->
+                    <h1>Basic HTML</h1> <!-- Permet de renseigner la thématique -->
                 </header>
                 <dl>  <!-- Liste de définitions des balises de la thématique concernée -->
+
                   <dt>Select</dt> <!-- nom de la balise -->
                   <dd>La balise  &lt;select&gt; permet de créer une liste déroulante ou un choix multiples.</dd> <!-- définition de la balise -->
+                  <dt>p</dt> <!-- nom de la balise -->
+                  <dd>
+                    <p>La balise  &lt;p&gt; permet de créer un paragraphe.</p> <!-- définition de la balise -->   
+                    <p>Exemple :<br/>
+                     &lt;p&gt;Ceci est un paragraphe.&lt;p&gt; 
+                    </p>
+                    <p>Paramètres d'affichage CSS par défaut : <br/>
+                     La plupart des navigateurs vont afficher l'élément &lt;p&gt; avec les valeurs suivantes :
+                    </p>
+                    <pre> 
+                     p {
+                        display: block;
+                        margin-top: 1em;
+                        margin-bottom: 1em;
+                        margin-left: 0;
+                        margin-right: 0;
+                       }
+                    </pre>
+                 </dd>
                 </dl> <!-- fin de la liste -->
                 <pre>
    <!-- &lt;select&gt;Mettre un exemple&lt;/select&gt;
@@ -122,8 +142,84 @@
               </dd>
             </dl>
             <pre>
-              <!-- &lt;select&gt;Mettre un exemple&lt;/select&gt;
-              &lt;bar&gt;en utilisant les balises&lt;/bar&gt; -->
+    <pre>
+      Code :
+
+      &lt;table&gt;   <!-- Ouvrir le tableau -->
+      &lt;colgroup&gt;
+      &lt;col span="2"&gt;
+      &lt;/colgroup&gt;
+      &lt;thead&gt; <!-- Mettre une entête -->
+      &lt;caption&gt;&lt;/caption&gt; <!-- Mettre un titre -->
+      &lt;tr&gt; <!-- Ouvrir une ligne -->
+      &lt;th&gt;&lt;/th&gt; <!-- Cellule de l'entête -->
+      &lt;th&gt;&lt;/th&gt; <!-- Cellule de l'entête -->
+      &lt;/tr&gt; <!-- Ouvrir une ligne -->
+      &lt;/thead&gt; <!-- Fermer l'entête -->
+      &lt;tbody&gt; <!-- Ouvrir le corps du tableau -->
+      &lt;tr&gt; <!-- Ouvrir une ligne -->
+      &lt;td&gt;&lt;/td&gt; <!-- Cellule commune -->
+      &lt;td&gt;&lt;/td&gt; <!-- Cellule commune -->
+      &lt;td&gt;&lt;/td&gt; <!-- Cellule commune -->
+      &lt;/tr&gt; <!-- Fermer une ligne -->
+      &lt;tr&gt; <!-- Ouvrir une ligne -->
+      &lt;td&gt;&lt;/td&gt; <!-- Cellule commune -->
+      &lt;td&gt;&lt;/td&gt; <!-- Cellule commune -->
+      &lt;td&gt;&lt;/td&gt; <!-- Cellule commune -->
+      &lt;/tr&gt; <!-- Fermer une ligne -->
+      &lt;tr&gt; <!-- Ouvrir une ligne -->
+      &lt;td&gt;&lt;/td&gt; <!-- Cellule commune -->
+      &lt;td&gt;&lt;/td&gt; <!-- Cellule commune -->
+      &lt;td&gt;&lt;/td&gt; <!-- Cellule commune -->
+      &lt;/tr&gt; <!-- Fermer une ligne -->
+      &lt;/tbody&gt; <!-- Fermer le corps du tableau -->
+      &lt;tfoot&gt; <!-- Ouvrir le pied du tabeau -->
+      &lt;tr&gt; <!-- Ouvrir une ligne -->
+      &lt;td&gt;&lt;/td&gt; <!-- Cellule commune -->
+      &lt;td&gt;&lt;/td&gt; <!-- Cellule commune -->
+      &lt;td&gt;&lt;/td&gt; <!-- Cellule commune -->
+      &lt;/tr&gt; <!-- Fermer une ligne -->
+      &lt;/tfoot&gt; <!-- Fermer le pied du tableau -->
+      &lt;/table&gt; <!-- Fermer le tableau -->
+
+      Rendu :
+
+      <table>
+        <colgroup>
+          <col span="2">
+        </colgroup>
+        <thead>
+          <caption>Titre</caption>
+          <tr>
+            <th>Cellule d'entête</th>
+            <th>Cellule d'entête</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Cellule basique</td>
+            <td>Cellule basique</td>
+            <td>Cellule basique</td>
+          </tr>
+          <tr>
+            <td>Cellule basique</td>
+            <td>Cellule basique</td>
+            <td>Cellule basique</td>
+          </tr>
+          <tr>
+            <td>Cellule basique</td>
+            <td>Cellule basique</td>
+            <td>Cellule basique</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>Cellule basique</td>
+            <td>Cellule basique</td>
+            <td>Cellule basique</td>
+          </tr>
+        </tfoot>
+      </table>
             </pre>
           </section>
 
