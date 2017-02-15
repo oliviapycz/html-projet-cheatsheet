@@ -15,90 +15,115 @@
         </header>
         <main class="site-main flex-1 overflow-auto">
             <section class="site-content">
-            <header>
-                &lt;html&gt;
-              <h1>HTML : qu'est-ce que c'est ?</h1>
-    &lt;header&gt;
-    <p>Pour l'entête d'une section et/ou d'une page, cette balise est utile pour une introduction et/ou des éléments de navigation. Cette balise peut-être utilisée dans la balise &lt;section&gt; et dans la balise &lt;article&gt;. </p>
-&lt;/header&gt;
-              </pre>
-            </header>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.</p>
-            </section>
-            <section class="site-content">
+              <pre>
                 <header>
                     <h1>Structure de base d'un document HTML</h1>
                 </header>
-                <p>Lorem ipsum.</p>
-                <pre>
 &lt;!doctype html&gt;
     &lt;head&gt;&lt;/head&gt;
     &lt;body&gt;&lt;/body&gt;
 &lt;/html&gt;
-                </pre>
-                <dl>  <!-- Liste de définitions des balises de la thématique concernée -->
-                  <dt>Footer</dt> <!-- nom de la balise -->
-                  <dd>L’élément HTML &lt;Footer&gt; représente le pied de page de la section ou de la racine de sectionnement la plus proche.<br> Un pied de page ou de section contient habituellement des informations sur l'auteur de la section,<br> les données relatives au droit d'auteur (copyright) ou les liens vers d'autres documents en relation.</dd> <!-- définition de la balise -->
-                </dl> <!-- fin de la liste -->
-                <pre>
 
-
-
-                    &lt;footer&gt;
-                      Elements en pied de page
-                    &lt;/footer&gt;
-
-
-                  <!-- &lt;select&gt;Mettre un exemple&lt;/select&gt;
-                  &lt;bar&gt;en utilisant les balises&lt;/bar&gt; -->
-                </pre>
             </section>
             <section class="site-content">
                 <!-- ---------------------------- Début du de l'annuaire -------------------------- -->
-                &lt;aside&gt;
-<p>Balise de structure supposant avoir un titre de type &lt;h1&gt;. Cette balise permet de regrouper des informations non essentielles relatives au site Web. Lorsque la balise &lt;aside&gt; se trouve dans un article, son contenu se réfère à l'article lui même et non au site Web (par exemple des notes de pages, un glossaire ou tout élément relatifs à l'article).
-Confusion : La sidebar d'une page n'a pas pour obligation d'être dans une balise &lt;aside&gt;. </p>
-                &lt;/aside&gt;
                 <header>
                     <h1>Sectionnantes</h1> <!-- Permet de renseigner la thématique -->
                 </header>
                 <dl>  <!-- Liste de définitions des balises de la thématique concernée -->
-                  <dt>Article</dt> <!-- nom de la balise -->
-                  <dd>La balise  &lt;article&gt; est utilisé pour du contenu ayant son propre sens indépendamment du reste des autres éléments de la page, ce contenu est distribuable et réutilisable.<br>Cela peut-être un billet de forum, un article de journal, un gadget, un commentaire d'utilisateur... La balise &lt;article&gt; peut avoir son propre header et footer. <br>Confusion possible avec la balise &lt;section&gt; qui regroupe des éléments de thématique identique. </dd> <!-- définition de la balise -->
-                </dl> <!-- fin de la liste -->
-                <pre>
-                  <h3>Exemple</h3>
+                  <dt>&lt;Article&gt;</dt><!-- nom de la balise -->
+                  <dd>La balise  &lt;article&gt; est utilisé pour du contenu ayant son propre sens indépendamment
+du reste des autres éléments de la page, ce contenu est distribuable et réutilisable.
+Cela peut-être un billet de forum, un article de journal, un gadget,
+un commentaire d'utilisateur... La balise &lt;article&gt;
+peut avoir son propre header et footer. Confusion possible avec la balise &lt;section&gt;
+qui regroupe des éléments de thématique identique.</dd>
+                  <h2>Exemple</h2>
+                  <pre>
       &lt;article&gt;
             &lt;p&gt;La conférence sur l'utilisation des standards du Web a prouvé que (...)&lt;/p&gt;
       &lt;/article&gt;
-
-       <dt>Section</dt> <!-- nom de la balise -->
-                  <dd>La balise  &lt;section&gt;représente une section générique d'un document, par exemple un groupe de contenu thématique. Une section commence généralement avec un titre.</dd> <!-- définition de la balise -->
-                </dl> <!-- fin de la liste -->
-                <pre>
-   <!-- &lt;select&gt;Mettre un exemple&lt;/select&gt;
-    &lt;bar&gt;en utilisant les balises&lt;/bar&gt; -->
+                </dl>
+                <dl>
+                </pre>
+      <dt>&lt;Aside&gt;</dt>
+<dd>Balise de structure supposant avoir un titre de type &lt;h1&gt;. Cette balise permet de regrouper
+des informations non essentielles relatives au site Web. Lorsque la balise &lt;aside&gt; se trouve
+dans un article, son contenu se réfère à l'article lui même et non au site Web
+(par exemple des notes de pages, un glossaire ou tout élément relatifs à l'article).
+Confusion : La sidebar d'une page n'a pas pour obligation d'être dans une
+balise &lt;aside&gt;<dd>
+  <h2>Exemple</h2>
+  <pre>
+&lt;article&gt;
+  &lt;p&gt;
+    Le dessin animé &lt;em&gt;La petite Sirène&lt;/em&gt; est
+    sorti en1989.
+  &lt;/p&gt;
+  &lt;aside&gt;
+    &lt;p&gt;
+      Les bénéfices du film s'élevèrent à 87 millions de dollars.
+    &lt;/p&gt;
+  &lt;/aside&gt;
+  &lt;p&gt;
+    Plus d'informations sur ce film...
+  &lt;/p&gt;
+&lt;/article&gt;
+</pre>
+ </dl>
+ <dl>
+   <dt>&lt;header&gt;</dt>
+   <dd>Pour l'entête d'une section et/ou d'une page, cette balise est utile pour une introduction
+     et/ou des éléments de navigation. Cette balise peut-être utilisée dans la
+     balise &lt;section&gt; et dans la balise &lt;article&gt;. </dd>
+<h2>Exemple</h2>
+<pre>
+&lt;header&gt;
+&lt;h1&gt;Rapport des ventes&lt;/h1&gt;
+<p>Le rapport sera présenté aux membres du groupe</p>
+&lt;/header&gt;
+</pre>
+</dl>
+<dl>
+<dt>&lt;Main&gt;</dt>
+   <dd>L’élément HTML &lt;Main&gt; représente le contenu principal du &lt;body&gt; du document ou de
+l'application.
+Il ne peut pas y avoir plusieurs éléments &lt;Main&gt; au sein d'un même document. Le contenu
+principal de la zone est constitué de contenu directement en relation, ou qui étend le
+sujet principal du document ou de la fonctionnalité principale d'une application.</dd>
+ <h2>Exemple</h2>
+ <pre>
+   &lt;body&gt;
+     &lt;main&gt;Contenu principal&lt;/main&gt;
+   &lt;/body&gt;
+ </pre>
+   </dl>
+               <dl>
+                 <dt>&lt;Section&gt;</dt>
+                  <dd>La balise  &lt;section&gt;représente une section générique d'un document, par exemple un groupe
+                    de contenu thématique. Une section commence généralement avec un titre.</dd>
+                  <h2>Exemple</h2>
+                  <pre>
     &lt;section&gt;
       &lt;h1&gt;Titre&lt;/h1&gt;
       &lt;p&gt;Du contenu sur un thème pour ce titre&lt;/p&gt;
     &lt;/section&gt;
-                </pre>
-                <dl>  <!-- Liste de définitions des balises de la thématique concernée -->
-                  <dt>Main</dt> <!-- nom de la balise -->
-                  <dd>L’élément HTML &lt;Main&gt; représente le contenu principal du &lt;body&gt; du document ou de l'application.<br> Il ne peut pas y avoir plusieurs éléments &lt;Main&gt; au sein d'un même document.<br> Le contenu principal de la zone est constitué de contenu directement en relation, ou qui étend le sujet principal du document ou de la fonctionnalité principale d'une application.</dd> <!-- définition de la balise -->
-                </dl> <!-- fin de la liste -->
+  </pre>
+                </dl>
+                  <dl>
+                <dt>&lt;Footer&gt;</dt>
+                <dd>L’élément HTML &lt;Footer&gt; représente le pied de page de la section ou de la racine
+                  de sectionnement la plus proche.<br> Un pied de page ou de section contient
+                  habituellement des informations sur l'auteur de la section,<br> les données relatives
+                  au droit d'auteur (copyright) ou les liens vers d'autres documents
+                  en relation.</dd>
+                <h2>Exemple</h2>
                 <pre>
-
-                  &lt;body&gt;
-
-                    &lt;main&gt;
-                      Contenu principal
-                    &lt;/main&gt;
-
-                  &lt;/body&gt;
-                  <!-- &lt;select&gt;Mettre un exemple&lt;/select&gt;
-                  &lt;bar&gt;en utilisant les balises&lt;/bar&gt; -->
+                  &lt;footer&gt;
+                    Elements en pied de page
+                  &lt;/footer&gt;
                 </pre>
+                  </dl>
             </section>
         </main>
         <footer class="site-footer flex-row flex-justify-center flex-align-baseline overflow-hidden">
