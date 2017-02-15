@@ -327,18 +327,17 @@
               </header>
               <dl>  <!-- Liste de définitions des balises de la thématique concernée -->
                 <dt>a</dt> <!-- nom de la balise -->
-                <dd>La balise  &lt;a&gt;(pour ancre ou anchor en anglais) définit un hyperlien
- vers un autre endroit de la même page ou vers une autre page sur le Web.</dd> <!-- définition de la balise -->
-              </dl> <!-- fin de la liste -->
-              <pre>
-                <p>Exemple :<br/>
+                <dd><p>La balise  &lt;a&gt;(pour ancre ou anchor en anglais) définit un hyperlien
+ vers un autre endroit de la même page ou vers une autre page sur le Web.</p>
+
+                    <p>Exemple :<br/>
           &lt;a&gt;href="https://developer.mozilla.org/">MDN&lt;/a&gt;
-                </p>
-              </pre>
-              <p>Paramètres d'affichage CSS par défaut : <br/>
+                    </p>
+
+                    <p>Paramètres d'affichage CSS par défaut : <br/>
                La plupart des navigateurs vont afficher l'élément &lt;a&gt; avec les valeurs suivantes :
-              </p>
-              <pre>
+                    </p>
+                  <pre>
                 a:link, a:visited {
                    color: (internal value);
                    text-decoration: underline;
@@ -348,19 +347,15 @@
                a:link:active, a:visited:active {
                    color: (internal value);
                }
-             </pre>
-
-              <dl>  <!-- Liste de définitions des balises de la thématique concernée -->
+                  </pre>
+                </dd> <!-- définition de la balise -->
                 <dt>link</dt> <!-- nom de la balise -->
-                <dd>La balise  &lt;link&gt;définit la relation entre le document courant et une ressource externe.
+                <dd><p>La balise  &lt;link&gt;définit la relation entre le document courant et une ressource externe.
 Cet élément peut être utilisé pour définir un lien vers une feuille de style ou un cadre de navigation
-(accéder à la même page dans une langue différente par exemple).</dd> <!-- définition de la balise -->
-              </dl> <!-- fin de la liste -->
-              <pre>
+(accéder à la même page dans une langue différente par exemple).</p>
                 <p>Exemple :<br/>
                   &lt;link href="style.css" rel="stylesheet"/&gt;
                 </p>
-              </pre>
               <p>Paramètres d'affichage CSS par défaut : <br/>
                La plupart des navigateurs vont afficher l'élément &lt;link&gt; avec les valeurs suivantes :
               </p>
@@ -369,14 +364,13 @@ Cet élément peut être utilisé pour définir un lien vers une feuille de styl
                     display: none;
                 }
              </pre>
-              <dl>  <!-- Liste de définitions des balises de la thématique concernée -->
+                </dd> <!-- définition de la balise -->
                 <dt>nav</dt> <!-- nom de la balise -->
-                <dd>La balise  &lt;nav&gt; représente une section d'une page ayant des liens
+                <dd><p>La balise  &lt;nav&gt; représente une section d'une page ayant des liens
 vers d'autres pages ou des fragments de cette page. Autrement dit, c'est une section destinée
-à la navigation dans un document.</dd> <!-- définition de la balise -->
-              </dl> <!-- fin de la liste -->
-              <pre>
-                <p>Exemple :<br/>
+à la navigation dans un document.</p>
+                <p>Exemple :</p><br/>
+                  <pre>
                   &lt;nav&gt;
                     &lt;ul&gt;
                       &lt;li&gt;&lt;a href="#Accueil">Accueil&lt;/a&gt;&lt;/li&gt;
@@ -384,16 +378,17 @@ vers d'autres pages ou des fragments de cette page. Autrement dit, c'est une sec
                       &lt;li&gt;&lt;a href="#Contact">Contact&lt;/a&gt;&lt;/li&gt;
                     &lt;/ul&gt;
                   &lt;/nav&gt;
-                </p>
-              </pre>
-              <p>Paramètres d'affichage CSS par défaut : <br/>
+                 </pre>
+                <p>Paramètres d'affichage CSS par défaut : <br/>
                La plupart des navigateurs vont afficher l'élément &lt;nav&gt; avec les valeurs suivantes :
-              </p>
+                </p>
               <pre>
                 nav {
                     display: block;
                 }
              </pre>
+            </dd> <!-- définition de la balise -->
+            </dl> <!-- fin de la liste -->
           </section>
 
           <section class="site-content">
@@ -403,41 +398,36 @@ vers d'autres pages ou des fragments de cette page. Autrement dit, c'est une sec
               </header>
               <dl>  <!-- Liste de définitions des balises de la thématique concernée -->
                 <dt>audio</dt> <!-- nom de la balise -->
-                <dd>La balise  &lt;audio&gt;est utilisé afin d'intégrer un contenu sonore dans un document.</dd> <!-- définition de la balise -->
-              </dl> <!-- fin de la liste -->
-              <dl>  <!-- Liste de définitions des balises de la thématique concernée -->
+                <dd><p>La balise  &lt;audio&gt;est utilisé afin d'intégrer un contenu sonore dans un document.</p></dd> <!-- définition de la balise -->
                 <dt>source</dt> <!-- nom de la balise -->
-                <dd>La balise  &lt;source&gt;définit différentes ressources média pour un élément picture, audio ou vidéo.</dd> <!-- définition de la balise -->
-              </dl> <!-- fin de la liste -->
-              <dl>  <!-- Liste de définitions des balises de la thématique concernée -->
+                <dd><p>La balise  &lt;source&gt;définit différentes ressources média pour un élément picture, audio ou vidéo.</p></dd> <!-- définition de la balise -->
                 <dt>video</dt> <!-- nom de la balise -->
-                <dd>La balise  &lt;video&gt; intègre un contenu vidéo dans un document.</dd> <!-- définition de la balise -->
-              </dl> <!-- fin de la liste -->
-              <dl>  <!-- Liste de définitions des balises de la thématique concernée -->
+                <dd><p>La balise  &lt;video&gt; intègre un contenu vidéo dans un document.</p></dd> <!-- définition de la balise -->
                 <dt>track</dt> <!-- nom de la balise -->
-                <dd>La balise  &lt;track&gt;est utilisé comme élément fils d'un élément audio ou video
-et permet de fournir une piste texte pour le média (par exemple afin de gérer automatiquement les sous-titres).</dd> <!-- définition de la balise -->
-              </dl> <!-- fin de la liste -->
-              <pre>
-                  <p>Exemples :<br/>
-                    &lt;audio controls&gt;
-                      &lt;source src="horse.ogg" type="audio/ogg"&gt;
-                      &lt;source src="horse.mp3" type="audio/mpeg"&gt;
-                      Your browser does not support the audio element.
-                    &lt;/audio&gt;
+                <dd><p>La balise  &lt;track&gt;est utilisé comme élément fils d'un élément audio ou video
+et permet de fournir une piste texte pour le média (par exemple afin de gérer automatiquement les sous-titres).</p>
+                  <p>Exemples : </p><br/>
+                    <pre>
+                  &lt;audio controls&gt;
+                    &lt;source src="horse.ogg" type="audio/ogg"&gt;
+                    &lt;source src="horse.mp3" type="audio/mpeg"&gt;
+                    Your browser does not support the audio element.
+                  &lt;/audio&gt;
                     <br>
-                    &lt;video width="320" height="240" controls&gt;
-                      &lt;source src="movie.mp4" type="video/mp4"&gt;
-                      &lt;source src="movie.ogg" type="video/ogg"&gt;
-                      &lt;track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English"&gt;
-                      Your browser does not support the video tag.
-                    &lt;/video&gt;
-                  </p>
-              </pre>
+                  &lt;video width="320" height="240" controls&gt;
+                    &lt;source src="movie.mp4" type="video/mp4"&gt;
+                    &lt;source src="movie.ogg" type="video/ogg"&gt;
+                    &lt;track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English"&gt;
+                    Your browser does not support the video tag.
+                  &lt;/video&gt;
+                    </pre>
               <p>Paramètres d'affichage CSS par défaut : <br/>
                Aucuns
               </p>
+              </dd> <!-- définition de la balise -->
+              </dl> <!-- fin de la liste -->
             </section>
+               
         </main>
 
         <footer class="site-footer flex-row flex-justify-center flex-align-baseline overflow-hidden">
