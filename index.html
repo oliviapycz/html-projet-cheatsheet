@@ -78,7 +78,6 @@
                                 padding-left: 40px;
                                 }
                         </pre>
-
                         </dd>
                         <dt>< ol ></dt>
                         <dd>La balise < ol > définit une liste ordonnée, c'est à dire une liste tenant compte de l'ordre des éléments qu'elle contient. Par défaut, chacun de ses éléments est précédé de son numéro d'apparition (elle applique implicitement l'attribut "type=1").
@@ -135,6 +134,141 @@
                                         </dl>
                                 </section>
 
+<section class="site-content">
+    <header>
+        <h1>Le formulaire</h1>
+    </header>
+
+    <dl>
+
+        <dt>&lt;select&gt;&lt;/select&gt;</dt>
+        <dd>La balise select permet de créer une liste déroulante ou à choix multiples<dd>
+        <br>
+        <dt>&lt;optgroup&gt;&lt;/optgroup&gt;</dt>
+        <dd>La balise optgroup est utilisée pour grouper au sein de la balise "select" un
+    ensemble d'éléments options de même type</dd>
+       <br>
+<dt>&lt;options&gt;&lt;/options&gt;</dt>
+ <dd>La balise "option" s'utilise spécifiquement à l'intérieur d'une liste :
+"select". Elle définit un élément de cette liste</dd><br>
+
+exemple :
+<br>
+<div class="example-code">
+    &lt;select class="" name="select"&gt;<br>
+        &lt;optgroup label="optgroup"&gt;<br>
+            &lt;option&gt;option1&lt;/option&gt;<br>
+            &lt;option&gt;option2&lt;/option&gt;<br>
+        &lt;/optgroup&gt;<br>
+        &lt;optgroup label="optgroup"&gt;<br>
+            &lt;option&gt;option3&lt;/option&gt;<br>
+        &lt;/optgroup&gt;<br>
+    &lt;/select&gt;<br>
+</div>
+<br>
+<div class="example-result">
+    <select class="" name="select">
+        <optgroup label="optgroup">
+            <option>option1</option>
+            <option>option2</option>
+        </optgroup>
+        <optgroup label="optgroup">
+            <option>option3</option>
+        </optgroup>
+    </select>
+</div>
+<br>
+<dt>&lt;fieldset&gt;&lt;/fieldset&gt;</dt>
+  <dd>la balise "fieldset" est employée pour structurer plus facilement les formulaires.
+Elle permet en effet de regrouper et d'encadrer de façon visuelle un ensemble de champs.
+Il est de plus possible d'attribuer un titre à ce groupement en employant la balise
+"legend"</dd>
+<br>
+<dt>&lt;labels&gt;&lt;/label&gt;</dt>
+  <dd>La balise "label" permet de rattacher une information textuelle à un contrôle
+par le biais d'une étiquette. Ce tag est généralement utilisé dans les formulaires
+pour mettre en relation une zone de saisie et son descriptif"</dd>
+<br>
+<dd>&lt;legend&gt;&lt;/legend&gt;</dd>
+  <dd>La balise "legend" est utilisée au sein du tag "fieldset".
+Celui-ci permet de créer un cadre autour des éléments qu'il contient,
+et la balise "legend" permet de donner un titre à ce cadre</dd>
+<br>
+<dt>&lt;form&gt;&lt;/form&gt;</dt>
+  <dd>Les balises FORM et /FORM entourent un formulaire. La balise FORM peut
+contenir des attributs :NAME=nom qui permet de différencier plusieurs
+formulaires sur une même page.
+Entre les balises FORM et /FORM on met du texte et des objets destinés
+à recueillir les actions des utilisateurs :
+ligne de saisie, boutons, listes de sélection, ...</dd>
+<br>
+Exemples :
+<br><br />
+    &lt;form&gt;
+        form elements
+    &lt;form&gt;
+<br>
+<dt>&lt;input&gt;&lt;/input&gt;</dt>
+   <dd>Les balises INPUT et /INPUT permettent d'inclure dans un formulaire
+des objets destinés à réagir aux actions de l'utilisateur.
+Les attributs de la balise INPUT permettent de préciser le nom de l'objet
+et le type d'objet désiré.</dd>
+<br><br />
+Exemples :
+<br><br />
+    &lt;form&gt;
+        First name:<br>
+            &lt;input type="text" name="firstname"&gt;<br>
+        Last name:<br>
+            &lt;input type="text" name="lastname"&gt;
+    &lt;/form&gt;
+<br><br />
+    <form>
+        First name:<br>
+            <input type="text" name="firstname"><br>
+        Last name:<br>
+            <input type="text" name="lastname">
+    </form>
+<br>
+<dt>&lt;textarea&gt;&lt;/textarea&gt;</dt>
+    <dd>Les balises TEXTAREA et /TEXTAREA permettent de définir une zone de saisie
+à plusieurs lignes.</dd>
+<br>
+Exemples :
+<br><br />
+    &lt;textarea name="comment" form="usrform"&gt;Enter text here...&lt;/textarea&gt;
+<br><br />
+        <textarea name="comment" form="usrform">Enter text here...</textarea>
+<br><br />
+<dt>&lt;button&gt;&lt;/button&gt;</dt>
+    <dd>La balise permet de créer un contrôle de type bouton.
+C'est l'un des différents éléments utilisables au sein
+d'un formulaire &lt;form&gt; (au même titre que select, textarea et input).
+Il est possible de placer du code html à l'intérieur de l'élément button.</dd>
+<br>
+Exemples :
+<br /><br>
+    &lt;button type="button"&gt;Click Me!&lt;/button&gt;<br>
+
+        <button type="button">Click Me!</button>
+<br><br/>
+<dt>&lt;datalist&gt;</dt>
+   <dd>La balise &lt;datalist&gt; permet de définir une liste de valeurs qui
+sont associées à un élément de type &lt;input&gt; pour proposer un mécanisme
+d'auto complétion lors de la saisie de texte par l'utilisateur.
+Les valeurs ajoutées dans la balise &lt;datalist&gt; sont encadrées
+par des éléments &lt;option&gt;</dd><br>
+<br><br/>
+ <dt>&lt;keygen&gt;&lt;/keygen&gt;</dt>
+   <dd>La balise &lt;keygen&gt; permet de générer au sein d'un formulaire une paire de clés de sécurité pour permettre le cryptage et le décryptage de données échangées. La clé privée est conservée en local tandis que la clé publique est retournée au serveur. </dd><br>
+<br/>
+<dt>&lt;output&gt;&lt;/output&gt;</dt>
+<br><br/>
+  <dd>La balise &lt;output&gt; représente le résultat d'un calcul.</dd>
+</dl>
+
+</section>
+
     </main>
 
     <footer class="site-footer flex-row flex-justify-center flex-align-baseline overflow-hidden">
@@ -176,4 +310,3 @@
 </body>
 
 </html>
-
