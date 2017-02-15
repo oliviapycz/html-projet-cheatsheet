@@ -357,50 +357,52 @@
                   <h1>LIENS</h1> <!-- Permet de renseigner la thématique -->
               </header>
               <dl>  <!-- Liste de définitions des balises de la thématique concernée -->
-                <dt>a</dt> <!-- nom de la balise -->
-                <dd><p>La balise  &lt;a&gt;(pour ancre ou anchor en anglais) définit un hyperlien
+                <dt>&lt;a&gt;</dt> <!-- nom de la balise -->
+                <dd><p>La balise  &lt;a&gt; (pour ancre ou anchor en anglais) définit un hyperlien
  vers un autre endroit de la même page ou vers une autre page sur le Web.</p>
 
-                    <p>Exemple :<br/>
+                  <h2>  Exemple : </h2><br/>
+                    <pre>
           &lt;a&gt;href="https://developer.mozilla.org/">MDN&lt;/a&gt;
-                    </p>
+                    </pre>
 
                     <p>Paramètres d'affichage CSS par défaut : <br/>
                La plupart des navigateurs vont afficher l'élément &lt;a&gt; avec les valeurs suivantes :
                     </p>
                   <pre>
-                a:link, a:visited {
-                   color: (internal value);
-                   text-decoration: underline;
-                   cursor: auto;
-               }
+                      a:link, a:visited {
+                        color: (internal value);
+                        text-decoration: underline;
+                        cursor: auto;
+                                        }
 
-               a:link:active, a:visited:active {
-                   color: (internal value);
-               }
+                      a:link:active, a:visited:active {
+                        color: (internal value);
+                                                      }
                   </pre>
                 </dd> <!-- définition de la balise -->
-                <dt>link</dt> <!-- nom de la balise -->
-                <dd><p>La balise  &lt;link&gt;définit la relation entre le document courant et une ressource externe.
+                <dt>&lt;link&gt;</dt> <!-- nom de la balise -->
+                <dd><p>La balise  &lt;link&gt; définit la relation entre le document courant et une ressource externe.
 Cet élément peut être utilisé pour définir un lien vers une feuille de style ou un cadre de navigation
 (accéder à la même page dans une langue différente par exemple).</p>
-                <p>Exemple :<br/>
+                <h2>Exemple : </h2><br/>
+                  <pre>
                   &lt;link href="style.css" rel="stylesheet"/&gt;
-                </p>
+                </pre>
               <p>Paramètres d'affichage CSS par défaut : <br/>
                La plupart des navigateurs vont afficher l'élément &lt;link&gt; avec les valeurs suivantes :
               </p>
               <pre>
-                link {
+                  link {
                     display: none;
-                }
+                       }
              </pre>
                 </dd> <!-- définition de la balise -->
-                <dt>nav</dt> <!-- nom de la balise -->
+                <dt>&lt;nav&gt;</dt> <!-- nom de la balise -->
                 <dd><p>La balise  &lt;nav&gt; représente une section d'une page ayant des liens
 vers d'autres pages ou des fragments de cette page. Autrement dit, c'est une section destinée
 à la navigation dans un document.</p>
-                <p>Exemple :</p><br/>
+                <h2>Exemple :</h2><br/>
                   <pre>
                   &lt;nav&gt;
                     &lt;ul&gt;
@@ -409,14 +411,15 @@ vers d'autres pages ou des fragments de cette page. Autrement dit, c'est une sec
                       &lt;li&gt;&lt;a href="#Contact">Contact&lt;/a&gt;&lt;/li&gt;
                     &lt;/ul&gt;
                   &lt;/nav&gt;
-                 </pre>
+                </pre>
+
                 <p>Paramètres d'affichage CSS par défaut : <br/>
                La plupart des navigateurs vont afficher l'élément &lt;nav&gt; avec les valeurs suivantes :
                 </p>
               <pre>
-                nav {
+                  nav {
                     display: block;
-                }
+                      }
              </pre>
             </dd> <!-- définition de la balise -->
             </dl> <!-- fin de la liste -->
@@ -428,16 +431,16 @@ vers d'autres pages ou des fragments de cette page. Autrement dit, c'est une sec
                   <h1>AUDIO ET VIDEO</h1> <!-- Permet de renseigner la thématique -->
               </header>
               <dl>  <!-- Liste de définitions des balises de la thématique concernée -->
-                <dt>audio</dt> <!-- nom de la balise -->
+                <dt>&lt;audio&gt;</dt> <!-- nom de la balise -->
                 <dd><p>La balise  &lt;audio&gt;est utilisé afin d'intégrer un contenu sonore dans un document.</p></dd> <!-- définition de la balise -->
-                <dt>source</dt> <!-- nom de la balise -->
+                <dt>&lt;source&gt;</dt> <!-- nom de la balise -->
                 <dd><p>La balise  &lt;source&gt;définit différentes ressources média pour un élément picture, audio ou vidéo.</p></dd> <!-- définition de la balise -->
-                <dt>video</dt> <!-- nom de la balise -->
+                <dt>&lt;video&gt;</dt> <!-- nom de la balise -->
                 <dd><p>La balise  &lt;video&gt; intègre un contenu vidéo dans un document.</p></dd> <!-- définition de la balise -->
-                <dt>track</dt> <!-- nom de la balise -->
+                <dt>&lt;track&gt;</dt> <!-- nom de la balise -->
                 <dd><p>La balise  &lt;track&gt;est utilisé comme élément fils d'un élément audio ou video
 et permet de fournir une piste texte pour le média (par exemple afin de gérer automatiquement les sous-titres).</p>
-                  <p>Exemples : </p><br/>
+                  <h2>Exemples : </h2><br/>
                     <pre>
                   &lt;audio controls&gt;
                     &lt;source src="horse.ogg" type="audio/ogg"&gt;
@@ -452,25 +455,27 @@ et permet de fournir une piste texte pour le média (par exemple afin de gérer 
                     Your browser does not support the video tag.
                   &lt;/video&gt;
                     </pre>
+                  </p>
               <p>Paramètres d'affichage CSS par défaut : <br/>
                Aucuns
               </p>
               </dd> <!-- définition de la balise -->
               </dl> <!-- fin de la liste -->
             </section>
-               
-                           <section class="site-content">
+
+            <section class="site-content">
                 <!-- ---------------------------- PROGRAMMATION-------------------------- -->
                 <header>
                     <h1>PROGRAMMATION</h1> <!-- Permet de renseigner la thématique -->
                 </header>
                 <dl>  <!-- Liste de définitions des balises de la thématique concernée -->
-                  <dt>script</dt> <!-- nom de la balise -->
+                  <dt>&lt;script&gt;</dt> <!-- nom de la balise -->
                   <dd><p>La balise  &lt;script&gt; est utilisé pour intégrer ou faire référence à un script exécutable.</p>
 
-                      <p>Exemple :<br/>
+                      <h2>Exemple :</h2><br/>
+                      <pre>
             &lt;script src="javascript.js">&lt;/script&gt;
-                      </p>
+                      </pre>
 
                       <p>Paramètres d'affichage CSS par défaut : <br/>
                  La plupart des navigateurs vont afficher l'élément &lt;script&gt; avec les valeurs suivantes :
@@ -481,34 +486,37 @@ et permet de fournir une piste texte pour le média (par exemple afin de gérer 
                                }
                     </pre>
                   </dd> <!-- définition de la balise -->
-                  <dt>noscript</dt> <!-- nom de la balise -->
+                  <dt>&lt;noscript&gt;</dt> <!-- nom de la balise -->
                   <dd><p>La balise  &lt;noscript&gt;définit un fragment HTML qui doit être
 affiché si les fonctionnalités de script ne sont pas prises en charge ou si elles sont désactivées..</p>
-                  <p>Exemple :<br/>
+                  <h2>Exemple :</h2><br/>
+                  <pre>
                     &lt;script&gt;document.write("Hello World!")&lt;/script&gt; <br/>
                     &lt;noscript&gt;Your browser does not support JavaScript!&lt;/noscript&gt;
-                  </p>
+                  </pre>
                   <p>Paramètres d'affichage CSS par défaut : <br/>
                    Aucuns
 
                   </dd> <!-- définition de la balise -->
-                  <dt>embed</dt> <!-- nom de la balise -->
+                  <dt>&lt;embed&gt;</dt> <!-- nom de la balise -->
                   <dd><p>La balise  &lt;embed&gt;  représente un point d'intégration pour une application externe
 ou pour du contenu interactif (autrement dit, pour un plug-in).</p>
-                  <p>Exemple :<br/>
+                  <h2>Exemple :</h2><br/>
+                  <pre>
                         &lt;embed type="video/quicktime" src="film.mov" width="640" height="480"&gt;
-                  </p>
+                  </pre>
                   <p>Paramètres d'affichage CSS par défaut : <br/>
                    Aucuns
                  </p>
               </dd> <!-- définition de la balise -->
-              <dt>object</dt> <!-- nom de la balise -->
+              <dt>&lt;object&gt;</dt> <!-- nom de la balise -->
               <dd><p>La balise  &lt;object&gt;  représente une ressource externe qui peut être interprétée comme une image,
 un contexte de navigation imbriqué ou une ressource à traiter comme un plugin.</p>
 
-                  <p>Exemple :<br/>
+                  <h2>Exemple :</h2><br/>
+                  <pre>
                     &lt;object width="400" height="400" data="helloworld.swf">&lt;/object&gt;
-                  </p>
+                  </pre>
 
                   <p>Paramètres d'affichage CSS par défaut : <br/>
              La plupart des navigateurs vont afficher l'élément &lt;object&gt; avec les valeurs suivantes :
@@ -519,13 +527,14 @@ un contexte de navigation imbriqué ou une ressource à traiter comme un plugin.
                                  }
                 </pre>
               </dd> <!-- définition de la balise -->
-              <dt>param</dt> <!-- nom de la balise -->
+              <dt>&lt;param&gt;</dt> <!-- nom de la balise -->
               <dd><p>La balise  &lt;param&gt; définit les paramètres qui peuvent être employés dans un élément &lt;object&gt;.</p>
-              <p>Exemple :<br/>
+              <h2>Exemple :</h2><br/>
+              <pre>
                 &lt;object data="horse.wav"&gt; <br/>
                   &lt;param name="autoplay" value="true"&gt; <br/>
                 &lt;/object&gt;
-              </p>
+              </pre>
               <p>Paramètres d'affichage CSS par défaut : <br/>
          La plupart des navigateurs vont afficher l'élément &lt;param&gt; avec les valeurs suivantes :
               </p>
