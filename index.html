@@ -78,7 +78,7 @@
 
            </section>
 
-          <section class="site-content">
+            <section class="site-content">
             <header>
               <h1>TABLES</h1>
             </header>
@@ -87,77 +87,85 @@
               <dd>La balise &lt;table&gt; représente des données en deux dimensions ou
                 plus.
               </dd> 
-                <pre><h2>Exemple :</h2><br/>
-                &lt;table&gt; Ouverture du tableau&lt;/table&gt; 
-            </pre>
                 <p>Paramètres d'affichage CSS par défaut : <br/>
-        La plupart des navigateurs vont afficher l'élément &lt;table&gt; avec les valeurs suivantes :
-      </p>
+              La plupart des navigateurs vont afficher l'élément &lt;table&gt; avec les valeurs suivantes :
+              </p>
+              <pre>
+              table {
+              display: table;
+              border-collapse: separate;
+              border-spacing: 2px;
+              border-color: gray;
+              }
+             </pre>
+              <pre><h2>Exemple :</h2><br/>
+                &lt;table&gt; Ouverture du tableau&lt;/table&gt
+                </pre>
       
-      <pre>
-        table {
-          display: table;
-          border-collapse: separate;
-          border-spacing: 2px;
-          border-color: gray;
-        }
-      </pre>
+
+
               <dt>&lt;thead&gt;</dt>
               <dd>&lt;thead&gt; (pour Table Head) définit un ensemble de lignes définissant
                 les lignes d'en-tête des colonnes du tableau.
               </dd> 
-                <pre><h2>Exemple :</h2><br/>
-                    &lt;thead&gt; Entête &lt;/thead&gt; 
-                </pre>
-                <p>Paramètres d'affichage CSS par défaut : <br/>
-        La plupart des navigateurs vont afficher l'élément &lt;thead&gt; avec les valeurs suivantes :
-      </p>
                 
-      <pre>
-        thead {
-          display: table-header-group;
-          vertical-align: middle;
-          border-color: inherit;
-        }
-      </pre>
+              <p>Paramètres d'affichage CSS par défaut : <br/>
+                La plupart des navigateurs vont afficher l'élément &lt;thead&gt; avec les valeurs suivantes :
+              </p>          
+              <pre>
+                thead {
+                  display: table-header-group;
+                  vertical-align: middle;
+                  border-color: inherit;
+                }
+              </pre>
+              <pre>
+              <h2>Exemple :</h2><br/>
+                        &lt;thead&gt; Entête &lt;/thead&gt; 
+              </pre>
+
+
               <dt> &lt;caption&gt;</dt>
               <dd>L'élément HTML &lt;caption&gt; représente le titre d'un tableau. Bien
                 qu'il figure en première place parmi les descendants de l'élément
                 &lt;table&gt;, la mise en forme de la feuille de style CSS peut placer
                 cet élément à un autre endroit par rapport au tableau.
               </dd>
-                <pre><h2>Exemple :</h2><br/>
+                  <p>Paramètres d'affichage CSS par défaut : <br/>
+                  La plupart des navigateurs vont afficher l'élément &lt;caption&gt; avec les valeurs suivantes :
+                </p>            
+                <pre>
+                  caption {
+                    display: table-caption;
+                    text-align: center;
+                  }
+              </pre>
+               <pre>
+                  <h2>Exemple :</h2><br/>
                     &lt;caption&gt; Titre du tableau &lt;/caption&gt;
-                 </pre>
-                <p>Paramètres d'affichage CSS par défaut : <br/>
-        La plupart des navigateurs vont afficher l'élément &lt;caption&gt; avec les valeurs suivantes :
-      </p>
-                
-      <pre>
-        caption {
-          display: table-caption;
-          text-align: center;
-        }
-      </pre>
+                </pre>
+
+
               <dt> &lt;th&gt;</dt>
               <dd>La balise &lt;th&gt; (pour Table Header Cell) définit une cellule qui
                 est un en-tête pour un groupe de cellules du tableau. Le groupe de cellules
                 concernées est identifié par les attributs scope et headers.
               </dd>
-               <pre><h2>Exemple :</h2><br/>
+                <p>Paramètres d'affichage CSS par défaut : <br/>
+              La plupart des navigateurs vont afficher l'élément &lt;th&gt; avec les valeurs suivantes :
+              </p>
+              <pre>
+                th {
+                  display: table-cell;
+                  vertical-align: inherit;
+                  font-weight: bold;
+                  text-align: center;
+                }
+              </pre> 
+              <pre><h2>Exemple :</h2><br/>
                      &lt;th&gt; Cellule de l'en-tête du tableau  &lt;/th&gt;
                </pre>
-                <p>Paramètres d'affichage CSS par défaut : <br/>
-        La plupart des navigateurs vont afficher l'élément &lt;th&gt; avec les valeurs suivantes :
-      </p>
-      <pre>
-        th {
-          display: table-cell;
-          vertical-align: inherit;
-          font-weight: bold;
-          text-align: center;
-        }
-      </pre>
+
               <dt> &lt;tbody&gt;</dt>
               <dd>&lt;tbody&gt; (pour Table Body) définit un ensemble de lignes
                 représentant le corps au sein d’un tableau (&lt;table&gt;) les lignes
@@ -171,68 +179,76 @@
                 va permettre un défilement différent des éléments &lt;tfoot&gt;,
                 &lt;thead&gt; et &lt;caption&gt; du tableau (&lt;table&gt;) parent.
               </dd>
+              <p>Paramètres d'affichage CSS par défaut : <br/>
+                La plupart des navigateurs vont afficher l'élément &lt;tbody&gt; avec les valeurs suivantes :
+              </p>
+              <pre>
+                tbody {
+                  display: table-row-group;
+                  vertical-align: middle;
+                  border-color: inherit;
+                }
+              </pre> 
               <pre> <h2>Exemple :</h2><br/>
                    &lt;tbody&gt; Corps du tableau &lt;/tbody&gt;
               </pre>
-                <p>Paramètres d'affichage CSS par défaut : <br/>
-        La plupart des navigateurs vont afficher l'élément &lt;tbody&gt; avec les valeurs suivantes :
-      </p>
-      <pre>
-        tbody {
-          display: table-row-group;
-          vertical-align: middle;
-          border-color: inherit;
-        }
-      </pre>
+
+
               <dt> &lt;td&gt;</dt>
               <dd>L'élément HTML &lt;td&gt; (pour Table Cell) définit une cellule d'un
                 tableau contenant des données. Il fait partie du modèle du tableau.
               </dd>
-              <pre><h2>Exemple :</h2><br/>
+                <p>Paramètres d'affichage CSS par défaut : <br/>
+                La plupart des navigateurs vont afficher l'élément &lt;td&gt; avec les valeurs suivantes :
+                </p>
+                <pre>
+                td {
+                  display: table-cell;
+                  vertical-align: inherit;
+                }
+             </pre>
+             <pre><h2>Exemple :</h2><br/>
                  &lt;td&gt; Cellule contenant des données&lt;/td&gt;
               </pre>
-                <p>Paramètres d'affichage CSS par défaut : <br/>
-        La plupart des navigateurs vont afficher l'élément &lt;td&gt; avec les valeurs suivantes :
-      </p>
-      <pre>
-        td {
-          display: table-cell;
-          vertical-align: inherit;
-        }
-      </pre>
+
+
               <dt> &lt;tr&gt;</dt>
               <dd>La balise &lt;tr&gt; (pour Table Row) définit une ligne de cellules
                 au sein d'un tableau. Ces lignes peuvent mélanger des éléments
                 &lt;td&gt; et des éléments &lt;th&gt;.
               </dd>
+              <p>Paramètres d'affichage CSS par défaut : <br/>
+                La plupart des navigateurs vont afficher l'élément &lt;tr&gt; avec les valeurs suivantes :
+              </p>
+              <pre>
+                tr {
+                  display: table-row;
+                  vertical-align: inherit;
+                  border-color: inherit;
+                }
+              </pre>
               <pre><h2>Exemple :</h2><br/>
                   &lt;tr&gt; Ligne du tableau &lt;/tr&gt; 
               </pre>
-                  <p>Paramètres d'affichage CSS par défaut : <br/>
-        La plupart des navigateurs vont afficher l'élément &lt;tr&gt; avec les valeurs suivantes :
-      </p>
-      <pre>
-        tr {
-          display: table-row;
-          vertical-align: inherit;
-          border-color: inherit;
-        }
-      </pre>
+
+
               <dt> &lt;colgroup&gt;</dt>
               <dd>La balise  &lt;colgroup&gt; définit un groupe de colonnes au
                 sein d'un tableau.
               </dd>
+              <p>Paramètres d'affichage CSS par défaut : <br/>
+              La plupart des navigateurs vont afficher l'élément &lt;colgroup&gt; avec les valeurs suivantes :
+              </p>
+             <pre>
+              colgroup {
+               display: table-column-group;
+             }
+             </pre>
               <pre><h2>Exemple :</h2><br/>
                   &lt;colgroup&gt; Colonne du tableau &lt;/colgroup&gt; 
-               </pre>
-                  <p>Paramètres d'affichage CSS par défaut : <br/>
-        La plupart des navigateurs vont afficher l'élément &lt;colgroup&gt; avec les valeurs suivantes :
-      </p>
-      <pre>
-        colgroup {
-          display: table-column-group;
-        }
-      </pre>
+              </pre>
+
+
               <dt> &lt;col&gt;</dt>
               <dd>La balise  &lt;col&gt; définit une colonne appartenant à un
                 tableau et est utilisé afin de définir la sémantique commune à
@@ -240,35 +256,36 @@
                 d'un élément &lt;colgroup&gt;.
               </dd>
                 <p>Paramètres d'affichage CSS par défaut : <br/>
-        La plupart des navigateurs vont afficher l'élément &lt;col&gt; avec les valeurs suivantes :
-      </p>
-               <pre><h2>Exemple :</h2><br/>
+                  La plupart des navigateurs vont afficher l'élément &lt;col&gt; avec les valeurs suivantes :
+                </p>
+                <pre>
+                  col {
+                    display: table-column;
+                  }
+                </pre>
+                <pre><h2>Exemple :</h2><br/>
                   &lt;col&gt; Colonne utilisé pour definir semantique commune &lt;/col&gt; 
                 </pre>
-      <pre>
-        col {
-          display: table-column;
-        }
-      </pre>
+
+
               <dt> &lt;tfoot&gt;</dt>
               <dd>La balise  &lt;tfoot&gt; (pour Table Foot) définit un ensemble
                 de lignes résumant les colonnes d'un tableau.
               </dd>
                   <p>Paramètres d'affichage CSS par défaut : <br/>
-      La plupart des navigateurs vont afficher l'élément &lt;tfoot&gt; avec les valeurs suivantes :
-    </p>
-     <pre><h2>Exemple :</h2><br/>
-        &lt;tfoot&gt; Pied de tableau &lt;tfoot&gt; 
-      </pre>
-    <pre>
-      tfoot {
-        display: table-footer-group;
-        vertical-align: middle;
-        border-color: inherit;
-      }
-    </pre>
-            
+              La plupart des navigateurs vont afficher l'élément &lt;tfoot&gt; avec les valeurs suivantes :
+            </p>
             <pre>
+              tfoot {
+                display: table-footer-group;
+                vertical-align: middle;
+                border-color: inherit;
+              }
+            </pre>
+            <pre><h2>Exemple :</h2><br/>
+                &lt;tfoot&gt; Pied de tableau &lt;tfoot&gt; 
+            </pre>
+
     <pre>
       Code :
 
@@ -547,9 +564,55 @@ un contexte de navigation imbriqué ou une ressource à traiter comme un plugin.
               </dd> <!-- définition de la balise -->
               </dl> <!-- fin de la liste -->
             </section>
-               
-        </main>
+        
+        <section class="site-content">
+              <!-- ---------------------------- METADONNÉES -------------------------- -->
+              <header>
+                  <h1>METADONNÉES</h1> 
+              </header>
+              <dl>  
+                <dt>&lt;head&gt;</dt> 
+                <dd>La balise  &lt;head&gt; fournit des informations générales (métadonnées) sur le document, incluant son titre et des liens ou des définitions vers des scripts et feuilles de style.</dd> 
+              </dl> <p>Paramètres d'affichage CSS par défaut : <br/>
+               La plupart des navigateurs vont afficher l'élément &lt;head&gt; avec les valeurs suivantes :
+              </p>
+              <pre>
+              head 
+              { 
+                display: none;
+              }
+             </pre> 
+              <pre>
+                <h2>Exemple :</h2><br/>
+                  &lt;html&gt;
+                    &lt;head&gt;
+                    &lt;/head&gt;
+                  &lt;/html&gt;
+              </pre>
+             
+             <dl>  
+                <dt>&lt;base&gt;</dt> 
+                <dd>
+                  La balise &lt;base&gt; définit l'URL de base à utiliser pour recomposer toutes les URL relatives contenues dans un document. Il ne peut y avoir qu'un seul élément &lt;base&gt;au sein d'un document.
 
+                </dd> 
+              </dl> 
+              <pre>
+                <h2>Exemple :</h2><br/>
+                   &lt;base&gt; href="http://www.exemple.com/">
+                   &lt;base&gt; target="_blank" href="http://www.exemple.com/">
+              </pre>
+
+               <dl>  
+                <dt>&lt;meta&gt;</dt> 
+                <dd>L'élément HTML &lt;meta&lt; représente toute information de métadonnées qui ne peut pas être représentée par un des éléments &lt;base, &lt;link&gt;, &lt;script&gt;, &lt;style&gt; ou &lt;title&gt;</dd> 
+              </dl> 
+              <pre>
+                <h2>Exemple : </h2><br/>
+                     &lt;meta&gt; charset="utf-8">
+              </pre>
+
+        </main>
         <footer class="site-footer flex-row flex-justify-center flex-align-baseline overflow-hidden">
 
             <p>Réalisé par :</p>
