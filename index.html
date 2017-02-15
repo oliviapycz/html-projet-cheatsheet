@@ -96,7 +96,7 @@
                             <dt>< li ></dt>
                             <dd>La balise < li > encapsule des éléments présents dans des listes. Elle est toujours employée lors de l'utilisation de listes ordonnées, déclarées avec la balise < ol >, ou non ordonnées : balise < ul >.
                                 Les éléments < dir > et < menu > emploient également la balise < li > pour encapsuler les éléments qu'ils contiennent.
-                                <pre>
+                            <pre>
                                 li {
                                 display: list-item;
                                     }
@@ -141,19 +141,21 @@
 
     <dl>
 
-        <dt>&lt;select&gt;&lt;/select&gt;</dt>
-        <dd>La balise select permet de créer une liste déroulante ou à choix multiples<dd>
-        <br>
-        <dt>&lt;optgroup&gt;&lt;/optgroup&gt;</dt>
-        <dd>La balise optgroup est utilisée pour grouper au sein de la balise "select" un
-    ensemble d'éléments options de même type</dd>
-       <br>
-<dt>&lt;options&gt;&lt;/options&gt;</dt>
+
+<dt>&lt;select&gt;</dt>
+   <dd>La balise select permet de créer une liste déroulante ou à choix multiples<dd>
+    <br>
+<dt>&lt;optgroup&gt;</dt>
+    <dd>La balise optgroup est utilisée pour grouper au sein de la balise "select" un
+ensemble d'éléments options de même type</dd>
+   <br>
+<dt>&lt;options&gt;</dt>
  <dd>La balise "option" s'utilise spécifiquement à l'intérieur d'une liste :
 "select". Elle définit un élément de cette liste</dd><br>
-
-exemple :
+</dl>
+<h2>exemple :</h2>
 <br>
+<pre>
 <div class="example-code">
     &lt;select class="" name="select"&gt;<br>
         &lt;optgroup label="optgroup"&gt;<br>
@@ -165,6 +167,7 @@ exemple :
         &lt;/optgroup&gt;<br>
     &lt;/select&gt;<br>
 </div>
+</pre>
 <br>
 <div class="example-result">
     <select class="" name="select">
@@ -177,24 +180,67 @@ exemple :
         </optgroup>
     </select>
 </div>
+
 <br>
-<dt>&lt;fieldset&gt;&lt;/fieldset&gt;</dt>
+<dl>
+<dt>&lt;fieldset&gt;</dt>
   <dd>la balise "fieldset" est employée pour structurer plus facilement les formulaires.
 Elle permet en effet de regrouper et d'encadrer de façon visuelle un ensemble de champs.
 Il est de plus possible d'attribuer un titre à ce groupement en employant la balise
 "legend"</dd>
+
 <br>
-<dt>&lt;labels&gt;&lt;/label&gt;</dt>
-  <dd>La balise "label" permet de rattacher une information textuelle à un contrôle
-par le biais d'une étiquette. Ce tag est généralement utilisé dans les formulaires
-pour mettre en relation une zone de saisie et son descriptif"</dd>
-<br>
-<dd>&lt;legend&gt;&lt;/legend&gt;</dd>
+<dt>&lt;legend&gt;</dt>
   <dd>La balise "legend" est utilisée au sein du tag "fieldset".
 Celui-ci permet de créer un cadre autour des éléments qu'il contient,
 et la balise "legend" permet de donner un titre à ce cadre</dd>
 <br>
-<dt>&lt;form&gt;&lt;/form&gt;</dt>
+<h2>Exemple :</h2>
+<br />
+<pre>
+&lt;fieldset&gt;
+    &lt;legend&gt;Personalia:&lt;legend&gt;
+       Name: &lt;input type="text"&gt;<br>
+       Email: &lt;input type="text"&gt;<br>
+       Date of birth: &lt;input type="text"&gt;
+&lt;fieldset&gt;
+</pre>
+
+
+<fieldset>
+   <legend>Personalia:</legend>
+       Name: <input type="text"><br>
+       Email: <input type="text"><br>
+       Date of birth: <input type="text">
+</fieldset>
+<br><br />
+
+
+<dt>&lt;labels&gt;</dt>
+  <dd>La balise "label" permet de rattacher une information textuelle à un contrôle
+par le biais d'une étiquette. Ce tag est généralement utilisé dans les formulaires
+pour mettre en relation une zone de saisie et son descriptif"</dd>
+<br>
+<h2>Exemple :</h2>
+<pre>
+&lt;label for="male"&gt;Male&lt;label&gt;
+     &lt;input type="radio" name="gender" id="male" value="male"&gt;<br>
+&lt;label for="female"&gt;Female&lt;label&gt;
+     &lt;input type="radio" name="gender" id="female" value="female"&gt;<br>
+&lt;label for="other"&gt;Other&lt;label&gt;
+     &lt;input type="radio" name="gender" id="other" value="other"&gt;<br>
+     &lt;input type="submit" value="Submit"&gt;
+</pre>
+<label for="male">Male</label>
+    <input type="radio" name="gender" id="male" value="male"><br>
+ <label for="female">Female</label>
+    <input type="radio" name="gender" id="female" value="female"><br>
+ <label for="other">Other</label>
+    <input type="radio" name="gender" id="other" value="other"><br>
+    <input type="submit" value="Submit">
+</dl>
+<dl>
+<dt>&lt;form&gt;</dt>
   <dd>Les balises FORM et /FORM entourent un formulaire. La balise FORM peut
 contenir des attributs :NAME=nom qui permet de différencier plusieurs
 formulaires sur une même page.
@@ -202,26 +248,37 @@ Entre les balises FORM et /FORM on met du texte et des objets destinés
 à recueillir les actions des utilisateurs :
 ligne de saisie, boutons, listes de sélection, ...</dd>
 <br>
-Exemples :
 <br><br />
+
     &lt;form&gt;
         form elements
     &lt;form&gt;
+
+<pre>
+    form {
+    display: block;
+    margin-top: 0em;
+}
+</pre>
+
 <br>
-<dt>&lt;input&gt;&lt;/input&gt;</dt>
+<dt>&lt;input&gt;</dt>
    <dd>Les balises INPUT et /INPUT permettent d'inclure dans un formulaire
 des objets destinés à réagir aux actions de l'utilisateur.
 Les attributs de la balise INPUT permettent de préciser le nom de l'objet
 et le type d'objet désiré.</dd>
+
 <br><br />
-Exemples :
+<h2>Exemples :</h2>
 <br><br />
+<pre>
     &lt;form&gt;
         First name:<br>
             &lt;input type="text" name="firstname"&gt;<br>
         Last name:<br>
             &lt;input type="text" name="lastname"&gt;
     &lt;/form&gt;
+</pre>
 <br><br />
     <form>
         First name:<br>
@@ -229,27 +286,32 @@ Exemples :
         Last name:<br>
             <input type="text" name="lastname">
     </form>
+
 <br>
-<dt>&lt;textarea&gt;&lt;/textarea&gt;</dt>
+<dt>&lt;textarea&gt;</dt>
     <dd>Les balises TEXTAREA et /TEXTAREA permettent de définir une zone de saisie
 à plusieurs lignes.</dd>
 <br>
-Exemples :
+<h2>Exemples :</h2>
 <br><br />
+<pre>
     &lt;textarea name="comment" form="usrform"&gt;Enter text here...&lt;/textarea&gt;
+</pre>
 <br><br />
         <textarea name="comment" form="usrform">Enter text here...</textarea>
+
 <br><br />
-<dt>&lt;button&gt;&lt;/button&gt;</dt>
+<dt>&lt;button&gt;</dt>
     <dd>La balise permet de créer un contrôle de type bouton.
 C'est l'un des différents éléments utilisables au sein
 d'un formulaire &lt;form&gt; (au même titre que select, textarea et input).
 Il est possible de placer du code html à l'intérieur de l'élément button.</dd>
 <br>
-Exemples :
+<h2>Exemples :</h2>
 <br /><br>
+<pre>
     &lt;button type="button"&gt;Click Me!&lt;/button&gt;<br>
-
+</pre>
         <button type="button">Click Me!</button>
 <br><br/>
 <dt>&lt;datalist&gt;</dt>
@@ -259,13 +321,56 @@ d'auto complétion lors de la saisie de texte par l'utilisateur.
 Les valeurs ajoutées dans la balise &lt;datalist&gt; sont encadrées
 par des éléments &lt;option&gt;</dd><br>
 <br><br/>
- <dt>&lt;keygen&gt;&lt;/keygen&gt;</dt>
+</dl>
+<dl>
+ <dt>&lt;keygen&gt;</dt>
    <dd>La balise &lt;keygen&gt; permet de générer au sein d'un formulaire une paire de clés de sécurité pour permettre le cryptage et le décryptage de données échangées. La clé privée est conservée en local tandis que la clé publique est retournée au serveur. </dd><br>
 <br/>
-<dt>&lt;output&gt;&lt;/output&gt;</dt>
-<br><br/>
+<dt>&lt;output&gt;</dt>
   <dd>La balise &lt;output&gt; représente le résultat d'un calcul.</dd>
+
+<h2>Exemple Formulaire :</h2>
+
+<form action="/ma-page-de-traitement" method="post">
+  <fieldset>
+     <legend>Personne:</legend>
+    <div>
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="user_name" />
+    </div>
+    <div>
+        <label for="courriel">Courriel :</label>
+        <input type="email" id="courriel" name="user_email" />
+
+    </div>
+    <select class="" name="select">
+        <optgroup label="optgroup">
+            <option>option1</option>
+            <option>option2</option>
+        </optgroup>
+        <optgroup label="optgroup">
+            <option>option3</option>
+        </optgroup>
+    </select>
+    <div>
+        
+        <textarea id="message" name="user_message"></textarea>
+    </div>
+
+    <div class="button">
+        <button type="submit">Envoyer votre message</button>
+    </div>
+  </fieldset>
+
+
+</form>
+
+
+
+</form>
 </dl>
+
+
 
 </section>
 
