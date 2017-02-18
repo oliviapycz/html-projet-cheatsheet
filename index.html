@@ -54,11 +54,131 @@
                     </pre>
                  </dd>
                 </dl> <!-- fin de la liste -->
-                <pre>
-   <!-- &lt;select&gt;Mettre un exemple&lt;/select&gt;
-    &lt;bar&gt;en utilisant les balises&lt;/bar&gt; -->
-                </pre> 
 
+            </section>
+            <section class="site-content">
+                <header>
+                    <h1>Images</h1>
+                </header>
+                <dl>
+                  <dt>&lt;img&gt;</dt>
+                  <dd>L'élément HTML &lt;img&gt;permet de représenter une image dans un document.
+                    L'attribut src est ignoré lorsque l'agent utilisateur prend en charge srcset et que ce dernier contient des descripteurs avec 'w'. Dans cet exemple, lorsque la condition (min-width: 600px) est vérifiée pour le média utilisé, la largeur de l'image sera 200px, sinon,
+                   elle occupera 50vw (ce qui correspond à 50% de la largeur de la zone d'affichage (viewport)).
+                  </dd>
+                  <h2>Exemple</h2>
+                  <pre>
+                    &lt;img src="image.png"&gt;
+                </pre>
+                </dl>
+                <dl>
+      <dt>&lt;map&gt;</dt>
+<dd>L'élément HTML &lt;map&gt; est utilisé avec des éléments &lt;area&gt; afin de définir une
+  image cliquable divisée en régions.<dd>
+  <h2>Exemple</h2>
+  <pre>
+    &lt;map name="exemple-map-1"&gt;
+    &lt;area shape="rect" coords="0,0 200,200" href="https://developer.mozilla.org"
+    target="_blank" /&gt;
+    &lt;area shape="default" /&gt;
+    &lt;/map&gt;
+    &lt;img usemap="#exemple-map-1" src="https://mdn.mozillademos.org/files/14546/map.png"&gt;
+</pre>
+ </dl>
+ <dl>
+</dd>
+   <dt>&lt;area&gt;</dt>
+   <dd>L'élément HTML &lt;area&gt; définit une zone particulière d'une image et peut lui associer un
+     lien hypertexte. Cet élément n'est utilisé qu'au sein d'un élément &lt;map&gt;</dd>
+<h2>Exemple</h2>
+<pre>
+  &lt;map name="exemple-map-1"&gt;
+    <area shape="rect" coords="0,0 200,200" href="https://developer.mozilla.org" target="_blank" />
+    <area shape="default" />
+  </map>
+  <img usemap="#exemple-map-1" src="https://mdn.mozillademos.org/files/14546/map.png">
+</pre>
+</dl>
+<dl>
+
+<dt>&lt;canvas&gt;</dt>
+   <dd>L'élément HTML &lt;canvas&gt; fournit une zone graphique vide sur laquel des API JavaScript spécifiques peuvent
+     dessiner (tel que des Canvas 2D ou du WebGL).</dd>
+ <h2>Exemple</h2>
+ <pre>
+   &lt;canvas id="myCanvas"&gt;&lt;/canvas&gt;
+
+ &lt;script type="text/javascript"&gt;
+  	var canvas=document.getElementById('myCanvas');
+  	var ctx=canvas.getContext('2d');
+  	ctx.fillStyle='#FF0000';
+  	ctx.fillRect(0,0,80,100);
+ &lt;/script&gt;
+ </pre>
+   </dl>
+                 <dt>&lt;figcaption&gt;</dt>
+                  <dd>L'élément HTML &lt;figcaption&gt; permet d'indiquer un sous-titre, une légende, associé à une
+                    figure ou à une illustration (cette dernière étant représentée par l'élément &lt;figure&gt; qui
+                      est le parent direct de la légende). L'élément &lt;figcaption&gt; est optionnel ; s'il n'est
+                        pas présent, la figure n'aura pas de légende.</dd>
+                  <h2>Exemple</h2>
+                  <pre>
+                    &lt;figure&gt;
+                   &lt;figcaption&gt;Jijy, le chat de Stéphanie&lt;figcaption&gt;
+                   &lt;img src="jiji.jpg" width="304" height="228" /&gt;
+                &lt;/figure&gt;
+  </pre>
+                </dl>
+                <dt>&lt;figure&gt;</dt>
+                <dd>Utilisée pour regrouper un ou plusieurs médias ( illustrations, diagrammes, exemples de code,
+                  photos...) attachés au document sans pour autant en suivre le flux. Les images s'y trouvant
+                  n'ont pas obligation d'être inséré dans une balise &lt;p&gt; et dans le cas d'une liste d'images,
+                    on peut omettre les listes à puce. On utilisera la balise figcaption pour décrire les
+                    médias utilisés. Confusion : cette balise ne doit être utilisée dès qu'il y a une image
+                    dans un article, on peut aussi la confondre avec la balise &lt;aside&gt;. </dd>
+                <h2>Exemple</h2>
+                <pre>
+                  &lt;figure&gt;
+ &lt;p&gt;Stéphanie a un chat qui s'appelle Jiji&lt;/p&gt;
+ &lt;img src="jiji.jpg" width="304" height="228" /&gt;
+&lt;/figure&gt;
+                </pre>
+                  </dl>
+                  <dl>
+                <dt>&lt;picture&gt;</dt>
+                <dd>L'élément HTML &lt;picture&gt; est un conteneur utilisé afin de définir plusieurs
+                   éléments &lt;source&gt; destinés à un élément &lt;img&gt;. Le navigateur choisira la source
+                     la plus pertinente selon la disposition de la page (les contraintes qui
+                     s'appliquent à la boîte dans laquelle l'image devra être affichée) et
+                     selon l'appareil utilisé (la densité de pixels de l'affichage par exemple). </dd>
+                <h2>Exemple</h2>
+                <pre>
+                  &lt;picture&gt;
+ &lt;source srcset="mdn-logo-wide.png" media="(min-width: 600px)"&gt;
+ &lt;img src="mdn-logo-narrow.png" alt="MDN"&gt;
+&lt;/picture&gt;
+                </pre>
+                  </dl>
+                  <dl>
+                <dt>&lt;svg&gt;</dt>
+                <dd>Le W3C a commencé à travailler sur SVG à la fin des années 90, mais SVG n'est devenu
+                  populaire qu'avec la sortie d'Internet Explorer 9, supportant le SVG. Tous les principaux
+                  navigateurs le prennent maintenant en charge.
+
+Basé sur une syntaxe XML, SVG peut être stylé avec CSS et être rendu interactif grâce à JavaScript. HTML5
+permet à présent d'intégrer directement des balises SVG au sein d'un document HTML.
+
+SVG étant un format d'image vectorielle, les images SVG peuvent être redimensionnées à l'infini,
+ce qui les rend inestimables pour le responsive design, car elles permettent de créer des éléments
+d'interface qui s'adaptent à toutes les tailles d'écran. SVG fournit également un ensemble d'outils,
+comme du clipping, des masques, des filtres et des animations.</dd>
+                <h2>Exemple</h2>
+                <pre>
+&lt;svg width="100" height="100"&gt;
+ &lt;circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" /&gt;
+&lt;/svg&gt;
+                </pre>
+                  </dl>
             </section>
         <section class="site-content">
             <header>
@@ -133,7 +253,6 @@
                                         </dd>
                                         </dl>
                                 </section>
-
 <section class="site-content">
     <header>
         <h1>Le formulaire</h1>
@@ -413,5 +532,4 @@ par des éléments &lt;option&gt;</dd><br>
     </footer>
 
 </body>
-
 </html>
