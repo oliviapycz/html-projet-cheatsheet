@@ -11,6 +11,14 @@ body {
   height: 100%;
 }
 
+code {
+  white-space: pre-wrap;
+}
+
+samp {
+  overflow: auto;
+}
+
 p {
   margin: 0;
   line-height: 1.5;
@@ -124,6 +132,33 @@ nav ul {
               0 -1px 0 hsla(0,0%,100%,.25);
   font-family: Verdana;
   font-size: .7em;
+}
+
+.example-code,
+.example-code-only,
+.example-output {
+  padding: 1em;
+  display: block;
+}
+
+.example-code,
+.example-code-only {
+  margin: 0;
+  background-color: #dfe0e1;
+}
+
+.example-code {
+  border-radius: .5em .5em 0 0;
+}
+
+.example-code-only {
+  border-radius: .5em;
+}
+
+.example-output {
+  border-radius: 0 0 .5em .5em;
+  background-color: #fff;
+  font-family: inherit;
 }
 
 @keyframes authors-keys {
