@@ -34,6 +34,9 @@
                     <h1>Basic HTML</h1> <!-- Permet de renseigner la thématique -->
                 </header>
                 <dl>  <!-- Liste de définitions des balises de la thématique concernée -->
+
+                  <dt>Select</dt> <!-- nom de la balise -->
+                  <dd>La balise  &lt;select&gt; permet de créer une liste déroulante ou un choix multiples.</dd> <!-- définition de la balise -->
                   <dt>p</dt> <!-- nom de la balise -->
                   <dd>
                     <p>La balise  &lt;p&gt; permet de créer un paragraphe.</p> <!-- définition de la balise -->   
@@ -196,6 +199,408 @@ comme du clipping, des masques, des filtres et des animations.</dd>
 &lt;/svg&gt;
                 </pre>
                   </dl>
+
+             </section>
+
+            <section class="site-content">
+            <header>
+              <h1>TABLES</h1>
+            </header>
+            <dl>
+              <dt>&lt;table,&gt;</dt>
+              <dd>La balise &lt;table&gt; représente des données en deux dimensions ou
+                plus.
+              </dd> 
+              <pre>
+              <h2>Exemple :</h2><br/>
+                &lt;table&gt; Ouverture du tableau&lt;/table&gt
+              </pre>
+                <p> Paramètres d'affichage CSS par défaut : <br/>
+                La plupart des navigateurs vont afficher l'élément &lt;table&gt; avec les valeurs suivantes :
+                </p>
+              <pre>
+              table {
+                display: table;
+                border-collapse: separate;
+                border-spacing: 2px;
+                border-color: gray;
+              }
+              </pre>
+
+
+              <dt>&lt;thead&gt;</dt>
+              <dd>&lt;thead&gt; (pour Table Head) définit un ensemble de lignes définissant
+                les lignes d'en-tête des colonnes du tableau.
+              </dd> 
+              <pre><h2>Exemple :</h2><br/>
+                    &lt;thead&gt; Entête &lt;/thead&gt; 
+              </pre>
+                <p>Paramètres d'affichage CSS par défaut : <br/>
+                La plupart des navigateurs vont afficher l'élément &lt;thead&gt; avec les valeurs suivantes :
+                </p>
+              <pre>
+              thead {
+                display: table-header-group;
+                vertical-align: middle;
+                border-color: inherit;
+              }
+              </pre>
+
+
+              <dt> &lt;caption&gt;</dt>
+              <dd>L'élément HTML &lt;caption&gt; représente le titre d'un tableau. Bien
+                qu'il figure en première place parmi les descendants de l'élément
+                &lt;table&gt;, la mise en forme de la feuille de style CSS peut placer
+                cet élément à un autre endroit par rapport au tableau.
+              </dd>
+              <pre><h2>Exemple :</h2><br/>
+                  &lt;caption&gt; Titre du tableau &lt;/caption&gt;
+              </pre>
+              <p>
+                Paramètres d'affichage CSS par défaut : <br/>
+                La plupart des navigateurs vont afficher l'élément &lt;caption&gt; avec les valeurs suivantes :
+              </p>
+              <pre>
+              caption {
+                display: table-caption;
+                text-align: center;
+              }
+              </pre>
+
+              <dt> &lt;th&gt;</dt>
+              <dd>La balise &lt;th&gt; (pour Table Header Cell) définit une cellule qui
+                est un en-tête pour un groupe de cellules du tableau. Le groupe de cellules
+                concernées est identifié par les attributs scope et headers.
+              </dd>
+              <pre><h2>Exemple :</h2><br/>
+                  &lt;th&gt; Cellule de l'en-tête du tableau  &lt;/th&gt;
+              </pre>
+              <p>
+                Paramètres d'affichage CSS par défaut : <br/>
+                La plupart des navigateurs vont afficher l'élément &lt;th&gt; avec les valeurs suivantes :
+              </p>
+              <pre>
+              th {
+                  display: table-cell;
+                  vertical-align: inherit;
+                  font-weight: bold;
+                  text-align: center;
+              }
+              </pre>
+                
+              <dt> &lt;tbody&gt;</dt>
+              <dd>&lt;tbody&gt; (pour Table Body) définit un ensemble de lignes
+                représentant le corps au sein d’un tableau (&lt;table&gt;) les lignes
+                du tableau &lt;tr&gt; doivent alors être placé entre l’élément
+                &lt;tbody&gt; mais elles ne sont pas obligatoires. Avec les éléments
+                &lt;tfoot&gt; et &lt;thead&gt;, &lt;tbody&gt; apporte aux périphériques
+                (imprimantes, écrans) des informations sémantiques supplémentaires.
+                L’élément &lt;tbody&gt; va représenter le contenu de l’élément parent
+                &lt;table&gt;, s’il est plus grand qu’une page, il va sûrement être
+                différent pour chaque pages imprimée. Pour les écrans, &lt;tbody&gt;
+                va permettre un défilement différent des éléments &lt;tfoot&gt;,
+                &lt;thead&gt; et &lt;caption&gt; du tableau (&lt;table&gt;) parent.
+              </dd>
+              <pre> 
+              <h2>
+                Exemple :
+              </h2><br/>
+                   &lt;tbody&gt; Corps du tableau &lt;/tbody&gt;
+              </pre>
+              <p>
+                Paramètres d'affichage CSS par défaut : <br/>
+                La plupart des navigateurs vont afficher l'élément &lt;tbody&gt; avec les valeurs suivantes :
+               </p>
+              <pre>
+              tbody {
+                display: table-row-group;
+                vertical-align: middle;
+                border-color: inherit;
+              }
+              </pre>
+              
+              <dt> &lt;td&gt;</dt>
+              <dd>L'élément HTML &lt;td&gt; (pour Table Cell) définit une cellule d'un
+                tableau contenant des données. Il fait partie du modèle du tableau.
+              </dd>
+              <pre><h2>Exemple :</h2><br/>
+                 &lt;td&gt; Cellule contenant des données&lt;/td&gt;
+              </pre>
+              <p>
+                Paramètres d'affichage CSS par défaut : <br/>
+                La plupart des navigateurs vont afficher l'élément &lt;td&gt; avec les valeurs suivantes :
+              </p>
+              <pre>
+              td {
+                display: table-cell;
+                vertical-align: inherit;
+              }
+              </pre>
+
+              <dt> &lt;tr&gt;</dt>
+              <dd>La balise &lt;tr&gt; (pour Table Row) définit une ligne de cellules
+                au sein d'un tableau. Ces lignes peuvent mélanger des éléments
+                &lt;td&gt; et des éléments &lt;th&gt;.
+              </dd>
+              <pre><h2>Exemple :</h2><br/>
+                  &lt;tr&gt; Ligne du tableau &lt;/tr&gt; 
+              </pre>
+                  <p>Paramètres d'affichage CSS par défaut : <br/>
+                La plupart des navigateurs vont afficher l'élément &lt;tr&gt; avec les valeurs suivantes :
+              </p>
+              <pre>
+              tr {
+                  display: table-row;
+                  vertical-align: inherit;
+                  border-color: inherit;
+              }
+              </pre>
+
+              <dt> &lt;colgroup&gt;</dt>
+              <dd>La balise  &lt;colgroup&gt; définit un groupe de colonnes au
+                sein d'un tableau.
+              </dd>
+              <pre><h2>Exemple :</h2><br/>
+                  &lt;colgroup&gt; Colonne du tableau &lt;/colgroup&gt; 
+              </pre>
+                  <p>Paramètres d'affichage CSS par défaut : <br/>
+                La plupart des navigateurs vont afficher l'élément &lt;colgroup&gt; avec les valeurs suivantes :
+              </p>
+              <pre>
+                colgroup {
+                  display: table-column-group;
+                }
+              </pre>
+
+              <dt> &lt;col&gt;</dt>
+              <dd>La balise  &lt;col&gt; définit une colonne appartenant à un
+                tableau et est utilisé afin de définir la sémantique commune à
+                toutes ses cellules. On trouve généralement cet élément au sein
+                d'un élément &lt;colgroup&gt;.
+              </dd>
+               <pre><h2>Exemple :</h2><br/>
+                  &lt;col&gt; Colonne utilisé pour definir semantique commune &lt;/col&gt; 
+                </pre>
+                <p>Paramètres d'affichage CSS par défaut : <br/>
+                La plupart des navigateurs vont afficher l'élément &lt;col&gt; avec les valeurs suivantes :
+              </p>
+              <pre>
+                col {
+                  display: table-column;
+                }
+              </pre>
+
+              <dt> &lt;tfoot&gt;</dt>
+              <dd>La balise  &lt;tfoot&gt; (pour Table Foot) définit un ensemble
+                de lignes résumant les colonnes d'un tableau.
+              </dd>
+                <pre><h2>Exemple :</h2><br/>
+                    &lt;tfoot&gt; Pied de tableau &lt;tfoot&gt; 
+                </pre>
+                <p>Paramètres d'affichage CSS par défaut : <br/>
+                 La plupart des navigateurs vont afficher l'élément &lt;tfoot&gt; avec les valeurs suivantes :
+                </p>
+                <pre>
+                tfoot {
+                    display: table-footer-group;
+                    vertical-align: middle;
+                    border-color: inherit;
+                }
+                </pre>
+                        
+      <pre>
+      Code :
+
+      &lt;table&gt;   <!-- Ouvrir le tableau -->
+      &lt;colgroup&gt;
+      &lt;col span="2"&gt;
+      &lt;/colgroup&gt;
+      &lt;thead&gt; <!-- Mettre une entête -->
+      &lt;caption&gt;&lt;/caption&gt; <!-- Mettre un titre -->
+      &lt;tr&gt; <!-- Ouvrir une ligne -->
+      &lt;th&gt;&lt;/th&gt; <!-- Cellule de l'entête -->
+      &lt;th&gt;&lt;/th&gt; <!-- Cellule de l'entête -->
+      &lt;/tr&gt; <!-- Ouvrir une ligne -->
+      &lt;/thead&gt; <!-- Fermer l'entête -->
+      &lt;tbody&gt; <!-- Ouvrir le corps du tableau -->
+      &lt;tr&gt; <!-- Ouvrir une ligne -->
+      &lt;td&gt;&lt;/td&gt; <!-- Cellule commune -->
+      &lt;td&gt;&lt;/td&gt; <!-- Cellule commune -->
+      &lt;td&gt;&lt;/td&gt; <!-- Cellule commune -->
+      &lt;/tr&gt; <!-- Fermer une ligne -->
+      &lt;tr&gt; <!-- Ouvrir une ligne -->
+      &lt;td&gt;&lt;/td&gt; <!-- Cellule commune -->
+      &lt;td&gt;&lt;/td&gt; <!-- Cellule commune -->
+      &lt;td&gt;&lt;/td&gt; <!-- Cellule commune -->
+      &lt;/tr&gt; <!-- Fermer une ligne -->
+      &lt;tr&gt; <!-- Ouvrir une ligne -->
+      &lt;td&gt;&lt;/td&gt; <!-- Cellule commune -->
+      &lt;td&gt;&lt;/td&gt; <!-- Cellule commune -->
+      &lt;td&gt;&lt;/td&gt; <!-- Cellule commune -->
+      &lt;/tr&gt; <!-- Fermer une ligne -->
+      &lt;/tbody&gt; <!-- Fermer le corps du tableau -->
+      &lt;tfoot&gt; <!-- Ouvrir le pied du tabeau -->
+      &lt;tr&gt; <!-- Ouvrir une ligne -->
+      &lt;td&gt;&lt;/td&gt; <!-- Cellule commune -->
+      &lt;td&gt;&lt;/td&gt; <!-- Cellule commune -->
+      &lt;td&gt;&lt;/td&gt; <!-- Cellule commune -->
+      &lt;/tr&gt; <!-- Fermer une ligne -->
+      &lt;/tfoot&gt; <!-- Fermer le pied du tableau -->
+      &lt;/table&gt; <!-- Fermer le tableau -->
+
+      Rendu :
+
+      <table>
+        <colgroup>
+          <col span="2">
+        </colgroup>
+        <thead>
+          <caption>Titre</caption>
+          <tr>
+            <th>Cellule d'entête</th>
+            <th>Cellule d'entête</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Cellule basique</td>
+            <td>Cellule basique</td>
+            <td>Cellule basique</td>
+          </tr>
+          <tr>
+            <td>Cellule basique</td>
+            <td>Cellule basique</td>
+            <td>Cellule basique</td>
+          </tr>
+          <tr>
+            <td>Cellule basique</td>
+            <td>Cellule basique</td>
+            <td>Cellule basique</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>Cellule basique</td>
+            <td>Cellule basique</td>
+            <td>Cellule basique</td>
+          </tr>
+        </tfoot>
+      </table>
+            </pre>
+          </section>
+              </dl>
+        
+          <section class="site-content">
+              <!-- ---------------------------- LIENS-------------------------- -->
+              <header>
+                  <h1>LIENS</h1> <!-- Permet de renseigner la thématique -->
+              </header>
+              <dl>  <!-- Liste de définitions des balises de la thématique concernée -->
+                <dt>&lt;a&gt;</dt> <!-- nom de la balise -->
+                <dd><p>La balise  &lt;a&gt; (pour ancre ou anchor en anglais) définit un hyperlien
+ vers un autre endroit de la même page ou vers une autre page sur le Web.</p>
+
+                  <h2>  Exemple : </h2><br/>
+                    <pre>
+          &lt;a&gt;href="https://developer.mozilla.org/">MDN&lt;/a&gt;
+                    </pre>
+
+                    <p>Paramètres d'affichage CSS par défaut : <br/>
+               La plupart des navigateurs vont afficher l'élément &lt;a&gt; avec les valeurs suivantes :
+                    </p>
+                  <pre>
+                      a:link, a:visited {
+                        color: (internal value);
+                        text-decoration: underline;
+                        cursor: auto;
+                                        }
+
+                      a:link:active, a:visited:active {
+                        color: (internal value);
+                                                      }
+                  </pre>
+                </dd> <!-- définition de la balise -->
+                <dt>&lt;link&gt;</dt> <!-- nom de la balise -->
+                <dd><p>La balise  &lt;link&gt; définit la relation entre le document courant et une ressource externe.
+Cet élément peut être utilisé pour définir un lien vers une feuille de style ou un cadre de navigation
+(accéder à la même page dans une langue différente par exemple).</p>
+                <h2>Exemple : </h2><br/>
+                  <pre>
+                  &lt;link href="style.css" rel="stylesheet"/&gt;
+                </pre>
+              <p>Paramètres d'affichage CSS par défaut : <br/>
+               La plupart des navigateurs vont afficher l'élément &lt;link&gt; avec les valeurs suivantes :
+              </p>
+              <pre>
+                  link {
+                    display: none;
+                       }
+             </pre>
+                </dd> <!-- définition de la balise -->
+                <dt>&lt;nav&gt;</dt> <!-- nom de la balise -->
+                <dd><p>La balise  &lt;nav&gt; représente une section d'une page ayant des liens
+vers d'autres pages ou des fragments de cette page. Autrement dit, c'est une section destinée
+à la navigation dans un document.</p>
+                <h2>Exemple :</h2><br/>
+                  <pre>
+                  &lt;nav&gt;
+                    &lt;ul&gt;
+                      &lt;li&gt;&lt;a href="#Accueil">Accueil&lt;/a&gt;&lt;/li&gt;
+                      &lt;li&gt;&lt;a href="#Apropos">À propos&lt;/a&gt;&lt;/li&gt;
+                      &lt;li&gt;&lt;a href="#Contact">Contact&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                  &lt;/nav&gt;
+                </pre>
+
+                <p>Paramètres d'affichage CSS par défaut : <br/>
+               La plupart des navigateurs vont afficher l'élément &lt;nav&gt; avec les valeurs suivantes :
+                </p>
+              <pre>
+                  nav {
+                    display: block;
+                      }
+             </pre>
+            </dd> <!-- définition de la balise -->
+            </dl> <!-- fin de la liste -->
+          </section>
+
+          <section class="site-content">
+              <!-- ----------------------------AUDIO ET VIDEO-------------------------- -->
+              <header>
+                  <h1>AUDIO ET VIDEO</h1> <!-- Permet de renseigner la thématique -->
+              </header>
+              <dl>  <!-- Liste de définitions des balises de la thématique concernée -->
+                <dt>&lt;audio&gt;</dt> <!-- nom de la balise -->
+                <dd><p>La balise  &lt;audio&gt;est utilisé afin d'intégrer un contenu sonore dans un document.</p></dd> <!-- définition de la balise -->
+                <dt>&lt;source&gt;</dt> <!-- nom de la balise -->
+                <dd><p>La balise  &lt;source&gt;définit différentes ressources média pour un élément picture, audio ou vidéo.</p></dd> <!-- définition de la balise -->
+                <dt>&lt;video&gt;</dt> <!-- nom de la balise -->
+                <dd><p>La balise  &lt;video&gt; intègre un contenu vidéo dans un document.</p></dd> <!-- définition de la balise -->
+                <dt>&lt;track&gt;</dt> <!-- nom de la balise -->
+                <dd><p>La balise  &lt;track&gt;est utilisé comme élément fils d'un élément audio ou video
+et permet de fournir une piste texte pour le média (par exemple afin de gérer automatiquement les sous-titres).</p>
+                  <h2>Exemples : </h2><br/>
+                    <pre>
+                  &lt;audio controls&gt;
+                    &lt;source src="horse.ogg" type="audio/ogg"&gt;
+                    &lt;source src="horse.mp3" type="audio/mpeg"&gt;
+                    Your browser does not support the audio element.
+                  &lt;/audio&gt;
+                    <br>
+                  &lt;video width="320" height="240" controls&gt;
+                    &lt;source src="movie.mp4" type="video/mp4"&gt;
+                    &lt;source src="movie.ogg" type="video/ogg"&gt;
+                    &lt;track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English"&gt;
+                    Your browser does not support the video tag.
+                  &lt;/video&gt;
+                    </pre>
+                  </p>
+              <p>Paramètres d'affichage CSS par défaut : <br/>
+               Aucuns
+              </p>
+              </dd> <!-- définition de la balise -->
+              </dl> <!-- fin de la liste -->
+>>>>>>> 835f4dceb45d1d4114e3025c4701940ef03f62cd
             </section>
         <section class="site-content">
             <header>
@@ -276,6 +681,7 @@ comme du clipping, des masques, des filtres et des animations.</dd>
     </header>
 
     <dl>
+
 
 <dt>&lt;select&gt;</dt>
    <dd>La balise select permet de créer une liste déroulante ou à choix multiples<dd>
@@ -496,18 +902,145 @@ par des éléments &lt;option&gt;</dd><br>
         <button type="submit">Envoyer votre message</button>
     </div>
   </fieldset>
-
-
-</form>
-
-
-
 </form>
 </dl>
 
 
 
 </section>
+            <section class="site-content">
+                <!-- ---------------------------- PROGRAMMATION-------------------------- -->
+                <header>
+                    <h1>PROGRAMMATION</h1> <!-- Permet de renseigner la thématique -->
+                </header>
+                <dl>  <!-- Liste de définitions des balises de la thématique concernée -->
+                  <dt>&lt;script&gt;</dt> <!-- nom de la balise -->
+                  <dd><p>La balise  &lt;script&gt; est utilisé pour intégrer ou faire référence à un script exécutable.</p>
+
+                      <h2>Exemple :</h2><br/>
+                      <pre>
+            &lt;script src="javascript.js">&lt;/script&gt;
+                      </pre>
+
+                      <p>Paramètres d'affichage CSS par défaut : <br/>
+                 La plupart des navigateurs vont afficher l'élément &lt;script&gt; avec les valeurs suivantes :
+                      </p>
+                    <pre>
+                        script {
+                        display: none;
+                               }
+                    </pre>
+                  </dd> <!-- définition de la balise -->
+                  <dt>&lt;noscript&gt;</dt> <!-- nom de la balise -->
+                  <dd><p>La balise  &lt;noscript&gt;définit un fragment HTML qui doit être
+affiché si les fonctionnalités de script ne sont pas prises en charge ou si elles sont désactivées..</p>
+                  <h2>Exemple :</h2><br/>
+                  <pre>
+                    &lt;script&gt;document.write("Hello World!")&lt;/script&gt; <br/>
+                    &lt;noscript&gt;Your browser does not support JavaScript!&lt;/noscript&gt;
+                  </pre>
+                  <p>Paramètres d'affichage CSS par défaut : <br/>
+                   Aucuns
+
+                  </dd> <!-- définition de la balise -->
+                  <dt>&lt;embed&gt;</dt> <!-- nom de la balise -->
+                  <dd><p>La balise  &lt;embed&gt;  représente un point d'intégration pour une application externe
+ou pour du contenu interactif (autrement dit, pour un plug-in).</p>
+                  <h2>Exemple :</h2><br/>
+                  <pre>
+                        &lt;embed type="video/quicktime" src="film.mov" width="640" height="480"&gt;
+                  </pre>
+                  <p>Paramètres d'affichage CSS par défaut : <br/>
+                   Aucuns
+                 </p>
+              </dd> <!-- définition de la balise -->
+              <dt>&lt;object&gt;</dt> <!-- nom de la balise -->
+              <dd><p>La balise  &lt;object&gt;  représente une ressource externe qui peut être interprétée comme une image,
+un contexte de navigation imbriqué ou une ressource à traiter comme un plugin.</p>
+
+                  <h2>Exemple :</h2><br/>
+                  <pre>
+                    &lt;object width="400" height="400" data="helloworld.swf">&lt;/object&gt;
+                  </pre>
+
+                  <p>Paramètres d'affichage CSS par défaut : <br/>
+             La plupart des navigateurs vont afficher l'élément &lt;object&gt; avec les valeurs suivantes :
+                  </p>
+                <pre>
+                    object:focus {
+                      outline: none;
+                                 }
+                </pre>
+              </dd> <!-- définition de la balise -->
+              <dt>&lt;param&gt;</dt> <!-- nom de la balise -->
+              <dd><p>La balise  &lt;param&gt; définit les paramètres qui peuvent être employés dans un élément &lt;object&gt;.</p>
+              <h2>Exemple :</h2><br/>
+              <pre>
+                &lt;object data="horse.wav"&gt; <br/>
+                  &lt;param name="autoplay" value="true"&gt; <br/>
+                &lt;/object&gt;
+              </pre>
+              <p>Paramètres d'affichage CSS par défaut : <br/>
+         La plupart des navigateurs vont afficher l'élément &lt;param&gt; avec les valeurs suivantes :
+              </p>
+            <pre>
+                param {
+                  display: none;
+                      }
+            </pre>
+
+              </dd> <!-- définition de la balise -->
+              </dl> <!-- fin de la liste -->
+            </section>
+        
+
+            <section class="site-content">
+              <!-- ---------------------------- METADONNÉES -------------------------- -->
+              <header>
+                  <h1>METADONNÉES</h1> 
+              </header>
+              <dl>  
+                <dt>&lt;head&gt;</dt> 
+                <dd>La balise  &lt;head&gt; fournit des informations générales (métadonnées) sur le document, incluant son titre et des liens ou des définitions vers des scripts et feuilles de style.</dd> 
+              </dl> 
+              <pre>
+                <h2>Exemple :</h2><br/>
+                  &lt;html&gt;
+                    &lt;head&gt;
+                    &lt;/head&gt;
+                  &lt;/html&gt;
+              </pre>
+              <p>Paramètres d'affichage CSS par défaut : <br/>
+               La plupart des navigateurs vont afficher l'élément &lt;head&gt; avec les valeurs suivantes :
+              </p>
+              <pre>
+              head 
+              { 
+                display: none;
+              }
+             </pre>
+             <dl>  
+                <dt>&lt;base&gt;</dt> 
+                <dd>
+                  La balise &lt;base&gt; définit l'URL de base à utiliser pour recomposer toutes les URL relatives contenues dans un document. Il ne peut y avoir qu'un seul élément &lt;base&gt;au sein d'un document.
+
+                </dd> 
+              </dl> 
+              <pre>
+                <h2>Exemple :</h2><br/>
+                   &lt;base&gt; href="http://www.exemple.com/">
+                   &lt;base&gt; target="_blank" href="http://www.exemple.com/">
+              </pre>
+
+               <dl>  
+                <dt>&lt;meta&gt;</dt> 
+                <dd>L'élément HTML &lt;meta&lt; représente toute information de métadonnées qui ne peut pas être représentée par un des éléments &lt;base, &lt;link&gt;, &lt;script&gt;, &lt;style&gt; ou &lt;title&gt;</dd> 
+              </dl> 
+              <pre>
+                <h2>Exemple : </h2><br/>
+                     &lt;meta&gt; charset="utf-8">
+              </pre>
+              </section>
 
     </main>
 
@@ -548,4 +1081,5 @@ par des éléments &lt;option&gt;</dd><br>
     </footer>
 
 </body>
+
 </html>
